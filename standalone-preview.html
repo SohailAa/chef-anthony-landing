@@ -86,6 +86,22 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
     );
 
+    const PlayIcon = () => (
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    );
+
+    const PauseIcon = () => (
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+    );
+
+    const ChevronLeftIcon = () => (
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    );
+
+    const ChevronRightIcon = () => (
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    );
+
     // --- Header ---
     const Header = () => {
       const [isScrolled, setIsScrolled] = useState(false);
@@ -192,12 +208,12 @@
         id: 'chef',
         tabLabel: '👨‍🍳 Chef Anthony',
         name: 'Chef Anthony Larsuel',
-        tagline: 'Executive Chef & Sports Nutrition Specialist',
+        tagline: 'Executive Culinary Artist & Sports Nutritionist',
         macro: 'Certified 100% Halal Culinary Mastery',
         img: 'public/chef-anthony.jpg',
         altImg: 'public/chef-anthony-original.jpg',
         isChef: true,
-        desc: 'Specializing in Michelin-caliber private dining, high-protein athletic meal prep, and bespoke sports nutrition formulated without seed oils.'
+        desc: 'Specializing in Michelin-caliber private dining, high-protein athletic meal prep, and bespoke sports nutrition formulated without inflammatory seed oils.'
       },
       {
         id: 'lamb',
@@ -205,9 +221,10 @@
         name: 'Signature Halal Lamb Chops',
         tagline: 'New Zealand Grass-Fed • Confit Rosemary',
         macro: '52g Protein • High Bioavailable Iron & CLA',
-        img: 'https://images.unsplash.com/photo-1603894584373-5ac82bea3d76?auto=format&fit=crop&w=1200&q=85',
+        img: 'public/lamb-chops.jpg',
+        altImg: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85',
         isChef: false,
-        desc: 'Thick-cut pasture-raised chops seared in garlic confit and cold-pressed extra virgin olive oil with a tart pomegranate-balsamic reduction.'
+        desc: 'Thick-cut pasture-raised chops pan-seared in garlic confit and cold-pressed extra virgin olive oil with a tart pomegranate-balsamic glaze.'
       },
       {
         id: 'steak',
@@ -215,7 +232,8 @@
         name: 'Prime Halal Black Angus Steak',
         tagline: '100% Halal Prime Cut • Herb Compound Butter',
         macro: '58g Protein • Natural Creatine & Complete Aminos',
-        img: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85',
+        img: 'public/prime-steak.jpg',
+        altImg: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85',
         isChef: false,
         desc: 'Tender prime steak seared in grass-fed garlic herb butter, served with charred heirloom asparagus and 80-mineral Celtic sea salt.'
       },
@@ -225,7 +243,8 @@
         name: 'Black Garlic Noodles & Gulf Shrimp',
         tagline: 'Wild-Caught Seafood • Fermented Black Garlic',
         macro: '44g Protein • High Astaxanthin Antioxidants',
-        img: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85',
+        img: 'public/garlic-shrimp.jpg',
+        altImg: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85',
         isChef: false,
         desc: 'Jumbo wild Gulf shrimp tossed in slow-cooked black garlic confit, crisp scallions, and silky artisanal wheat noodles.'
       },
@@ -235,16 +254,70 @@
         name: 'Crispy Organic Chicken Katsu',
         tagline: 'Air-Crisped in Avocado Oil • Raw Honey Tonkatsu',
         macro: '48g Protein • Pure Leucine for Muscle Synthesis',
-        img: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85',
+        img: 'public/crispy-katsu.jpg',
+        altImg: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85',
         isChef: false,
         desc: 'Organic chicken breast crisped in high-smoke-point avocado oil, drizzled with homemade ginger-honey glaze over antioxidant purple cabbage.'
+      },
+      {
+        id: 'salmon',
+        tabLabel: '🐟 Wild Alaskan Salmon',
+        name: 'Wild Salmon & Golden Turmeric Rice',
+        tagline: 'Pacific Wild-Caught • Anti-Inflammatory Curcumin',
+        macro: '46g Protein • High Omega-3 EPA/DHA',
+        img: 'public/wild-salmon.jpg',
+        altImg: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1200&q=85',
+        isChef: false,
+        desc: 'Pan-crisped wild salmon fillet over golden jasmine rice steeped in coconut milk, fresh turmeric root, and anti-inflammatory ginger.'
       }
     ];
 
-    // --- Hero Section ---
+    // --- Hero Section with Rotating Menu Showcase ---
     const Hero = () => {
       const [activeTab, setActiveTab] = useState(0);
+      const [isAutoRotating, setIsAutoRotating] = useState(true);
+      const [isHovered, setIsHovered] = useState(false);
       const [casualView, setCasualView] = useState(false);
+      const [progress, setProgress] = useState(0);
+
+      const ROTATION_INTERVAL = 4500; // ms per slide
+      const STEP_TIME = 50;
+
+      // Auto-rotation timer with smooth progress bar
+      useEffect(() => {
+        if (!isAutoRotating || isHovered) return;
+
+        const timer = setInterval(() => {
+          setProgress((prev) => {
+            if (prev >= 100) {
+              setActiveTab((curr) => (curr + 1) % heroFeaturedDishes.length);
+              setCasualView(false);
+              return 0;
+            }
+            return prev + (STEP_TIME / ROTATION_INTERVAL) * 100;
+          });
+        }, STEP_TIME);
+
+        return () => clearInterval(timer);
+      }, [isAutoRotating, isHovered]);
+
+      const handleSelectDish = (idx) => {
+        setActiveTab(idx);
+        setProgress(0);
+        setCasualView(false);
+      };
+
+      const handleNext = () => {
+        setActiveTab((prev) => (prev + 1) % heroFeaturedDishes.length);
+        setProgress(0);
+        setCasualView(false);
+      };
+
+      const handlePrev = () => {
+        setActiveTab((prev) => (prev - 1 + heroFeaturedDishes.length) % heroFeaturedDishes.length);
+        setProgress(0);
+        setCasualView(false);
+      };
 
       const activeItem = heroFeaturedDishes[activeTab];
 
@@ -321,32 +394,107 @@
 
               </div>
               
+              {/* Right Column: Rotating Menu Showcase */}
               <div className="lg:col-span-5 w-full flex flex-col items-center">
                 
-                <div className="w-full flex items-center justify-start gap-1.5 overflow-x-auto pb-2 mb-3 scrollbar-none">
-                  {heroFeaturedDishes.map((item, idx) => (
+                {/* Rotating Menu Controls Header Bar */}
+                <div className="w-full flex items-center justify-between mb-3 px-1">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/50 text-yellow-300 text-xs font-black uppercase tracking-wider shadow-sm">
+                      <span className={`w-2 h-2 rounded-full bg-yellow-400 ${isAutoRotating && !isHovered ? 'animate-ping' : ''}`}></span>
+                      <span>Rotating Menu</span>
+                    </span>
+                    <span className="text-gray-300 text-xs font-mono font-bold bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800">
+                      {String(activeTab + 1).padStart(2, '0')} / {String(heroFeaturedDishes.length).padStart(2, '0')}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-1.5">
                     <button
-                      key={item.id}
-                      onClick={() => { setActiveTab(idx); setCasualView(false); }}
-                      className={`px-3 py-2 rounded-md text-xs sm:text-sm font-bold tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer ${
-                        activeTab === idx
-                          ? 'bg-yellow-500 text-emerald-950 shadow-lg font-black scale-105'
-                          : 'bg-emerald-900/70 text-gray-300 hover:bg-emerald-800 hover:text-white border border-emerald-800/80'
-                      }`}
+                      type="button"
+                      onClick={() => setIsAutoRotating(prev => !prev)}
+                      title={isAutoRotating ? "Pause auto-rotation" : "Resume auto-rotation"}
+                      className="px-2.5 py-1.5 rounded-lg bg-emerald-900/90 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-300 border border-yellow-500/40 text-xs font-black flex items-center gap-1.5 transition-all cursor-pointer shadow-md"
                     >
-                      {item.tabLabel}
+                      {isAutoRotating ? (
+                        <>
+                          <PauseIcon />
+                          <span className="hidden sm:inline">Pause</span>
+                        </>
+                      ) : (
+                        <>
+                          <PlayIcon />
+                          <span className="hidden sm:inline">Rotate</span>
+                        </>
+                      )}
                     </button>
-                  ))}
+                    <button
+                      type="button"
+                      onClick={handlePrev}
+                      title="Previous dish"
+                      className="p-1.5 rounded-lg bg-emerald-900/90 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-300 border border-yellow-500/40 transition-all cursor-pointer shadow-md"
+                      aria-label="Previous"
+                    >
+                      <ChevronLeftIcon />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleNext}
+                      title="Next dish"
+                      className="p-1.5 rounded-lg bg-emerald-900/90 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-300 border border-yellow-500/40 transition-all cursor-pointer shadow-md"
+                      aria-label="Next"
+                    >
+                      <ChevronRightIcon />
+                    </button>
+                  </div>
                 </div>
 
-                <div className="relative w-full rounded-2xl overflow-hidden border-2 border-yellow-500/80 shadow-2xl bg-emerald-950 group">
+                {/* Interactive Showcase Navigator Tabs */}
+                <div className="w-full flex items-center justify-start gap-1.5 overflow-x-auto pb-2 mb-3 scrollbar-none">
+                  {heroFeaturedDishes.map((item, idx) => {
+                    const isActive = activeTab === idx;
+                    return (
+                      <button
+                        key={item.id}
+                        onClick={() => handleSelectDish(idx)}
+                        className={`relative px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer overflow-hidden ${
+                          isActive
+                            ? 'bg-yellow-500 text-emerald-950 shadow-xl font-black scale-105 ring-2 ring-yellow-400'
+                            : 'bg-emerald-900/80 text-gray-200 hover:bg-emerald-800 hover:text-white border border-emerald-700/80'
+                        }`}
+                      >
+                        <span>{item.tabLabel}</span>
+                        {isActive && isAutoRotating && !isHovered && (
+                          <span 
+                            className="absolute bottom-0 left-0 h-1 bg-emerald-950/80 transition-all duration-75"
+                            style={{ width: `${progress}%` }}
+                          />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Showcase Main Visual Card with Hover Pause */}
+                <div 
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  className="relative w-full rounded-2xl overflow-hidden border-2 border-yellow-500/80 shadow-2xl bg-emerald-950 group"
+                >
                   
                   <div className="absolute top-4 left-4 z-20 backdrop-blur-md bg-emerald-950/90 border border-yellow-500/70 px-4 py-1.5 rounded-full text-xs font-black text-yellow-300 uppercase tracking-widest flex items-center gap-2 shadow-xl">
                     <HalalBadgeIcon />
                     <span>100% Halal Certified</span>
                   </div>
 
-                  {activeItem.isChef && (
+                  {isHovered && isAutoRotating && (
+                    <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 backdrop-blur-md bg-black/80 border border-yellow-500/60 px-3 py-1 rounded-full text-[11px] font-bold text-yellow-300 tracking-wider uppercase shadow-xl flex items-center gap-1.5">
+                      <PauseIcon />
+                      <span>Hovered — Paused</span>
+                    </div>
+                  )}
+
+                  {activeItem.isChef ? (
                     <button 
                       type="button"
                       onClick={() => setCasualView(prev => !prev)}
@@ -354,15 +502,56 @@
                     >
                       {casualView ? '👔 Casual Look' : '👨‍🍳 Chef Uniform'}
                     </button>
+                  ) : (
+                    <span className="absolute top-4 right-4 z-20 backdrop-blur-md bg-emerald-950/90 border border-yellow-500/50 text-yellow-300 text-xs font-mono font-bold px-3 py-1 rounded-full shadow-xl">
+                      Dish #{activeTab} of {heroFeaturedDishes.length - 1}
+                    </span>
                   )}
 
                   <div className="aspect-[4/3] relative overflow-hidden bg-emerald-900">
                     <img 
+                      key={activeItem.id + (casualView ? '-casual' : '-uniform')}
                       src={activeItem.isChef ? (casualView ? activeItem.altImg : activeItem.img) : activeItem.img} 
                       alt={activeItem.name} 
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = activeItem.altImg || 'public/chef-anthony.jpg';
+                      }}
                       className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/30 to-transparent opacity-90 pointer-events-none"></div>
+
+                    <button
+                      type="button"
+                      onClick={handlePrev}
+                      className="absolute left-3 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-full bg-emerald-950/80 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-300 border border-yellow-500/50 shadow-xl opacity-80 hover:opacity-100 transition-all cursor-pointer"
+                      aria-label="Previous dish"
+                    >
+                      <ChevronLeftIcon />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleNext}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-full bg-emerald-950/80 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-300 border border-yellow-500/50 shadow-xl opacity-80 hover:opacity-100 transition-all cursor-pointer"
+                      aria-label="Next dish"
+                    >
+                      <ChevronRightIcon />
+                    </button>
+
+                    <div className="absolute bottom-3 left-0 right-0 z-20 flex justify-center items-center gap-2">
+                      {heroFeaturedDishes.map((_, dotIdx) => (
+                        <button
+                          key={dotIdx}
+                          onClick={() => handleSelectDish(dotIdx)}
+                          className={`h-2.5 rounded-full transition-all cursor-pointer ${
+                            activeTab === dotIdx 
+                              ? 'w-8 bg-yellow-400 shadow-md shadow-yellow-400' 
+                              : 'w-2.5 bg-white/40 hover:bg-white/70'
+                          }`}
+                          aria-label={`Go to slide ${dotIdx + 1}`}
+                        />
+                      ))}
+                    </div>
                   </div>
 
                   <div className="p-5 sm:p-6 bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-t border-yellow-500/50">
@@ -416,40 +605,51 @@
                   <span>Signature Culinary Creations • 100% Halal Certified</span>
                 </span>
                 <a href="#menu" className="text-gray-300 hover:text-yellow-400 text-xs sm:text-sm font-bold uppercase tracking-wider">
-                  Explore All 6 Dishes &rarr;
+                  Explore All Dishes &rarr;
                 </a>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {heroFeaturedDishes.filter(d => !d.isChef).map((dish) => (
-                  <a 
-                    key={dish.id} 
-                    href="#menu"
-                    className="group relative rounded-xl overflow-hidden border border-yellow-500/40 bg-emerald-950 hover:border-yellow-400 transition-all duration-300 shadow-lg block"
-                  >
-                    <div className="h-32 sm:h-36 overflow-hidden relative">
-                      <img 
-                        src={dish.img} 
-                        alt={dish.name} 
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/40 to-transparent"></div>
-                      
-                      <div className="absolute top-2 left-2 bg-emerald-950/90 px-2 py-0.5 rounded text-[10px] font-bold text-yellow-300 uppercase">
-                        100% Halal
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3.5">
+                {heroFeaturedDishes.filter(d => !d.isChef).map((dish) => {
+                  const dishIndex = heroFeaturedDishes.findIndex(d => d.id === dish.id);
+                  const isSelected = activeTab === dishIndex;
+                  return (
+                    <button 
+                      key={dish.id} 
+                      type="button"
+                      onClick={() => handleSelectDish(dishIndex)}
+                      className={`group text-left relative rounded-xl overflow-hidden border transition-all duration-300 shadow-lg block cursor-pointer ${
+                        isSelected ? 'border-yellow-400 ring-2 ring-yellow-400 scale-[1.02] bg-emerald-900' : 'border-yellow-500/40 bg-emerald-950 hover:border-yellow-400'
+                      }`}
+                    >
+                      <div className="h-28 sm:h-32 overflow-hidden relative">
+                        <img 
+                          src={dish.img} 
+                          alt={dish.name} 
+                          onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = dish.altImg || 'public/chef-anthony.jpg';
+                          }}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/40 to-transparent"></div>
+                        
+                        <div className="absolute top-2 left-2 bg-emerald-950/90 px-2 py-0.5 rounded text-[10px] font-bold text-yellow-300 uppercase">
+                          100% Halal
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="p-3">
-                      <h4 className="font-serif font-bold text-white text-sm sm:text-base group-hover:text-yellow-400 transition-colors truncate">
-                        {dish.name}
-                      </h4>
-                      <p className="text-[11px] font-mono text-yellow-300 font-semibold mt-0.5 truncate">
-                        {dish.macro.split('•')[0]}
-                      </p>
-                    </div>
-                  </a>
-                ))}
+                      <div className="p-2.5">
+                        <h4 className="font-serif font-bold text-white text-xs sm:text-sm group-hover:text-yellow-400 transition-colors truncate">
+                          {dish.name}
+                        </h4>
+                        <p className="text-[11px] font-mono text-yellow-300 font-semibold mt-0.5 truncate">
+                          {dish.macro.split('•')[0]}
+                        </p>
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -592,7 +792,8 @@
           category: 'signature',
           halalStatus: "100% Halal Certified (New Zealand Grass-Fed)",
           macros: "52g Protein • 6g Carbs • 34g Healthy Fats • 540 kcal",
-          img: "https://images.unsplash.com/photo-1603894584373-5ac82bea3d76?auto=format&fit=crop&w=1200&q=85",
+          img: "public/lamb-chops.jpg",
+          fallbackImg: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
           description: "Thick-cut, pan-seared pasture-raised lamb chops infused with fresh rosemary and roasted garlic confit, finished with a tart pomegranate-balsamic reduction.",
           goodIngredients: [
             {
@@ -619,7 +820,8 @@
           category: 'signature',
           halalStatus: "100% Halal Certified Prime Angus",
           macros: "58g Protein • 2g Carbs • 28g Fats • 490 kcal",
-          img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85",
+          img: "public/prime-steak.jpg",
+          fallbackImg: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85",
           description: "Tender prime steak seared in grass-fed garlic butter and cracked peppercorn, paired with fire-charred heirloom asparagus and grey sea salt.",
           goodIngredients: [
             {
@@ -646,7 +848,8 @@
           category: 'prep',
           halalStatus: "100% Halal Certified Wild-Caught Seafood",
           macros: "44g Protein • 52g Carbs • 14g Fats • 510 kcal",
-          img: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85",
+          img: "public/garlic-shrimp.jpg",
+          fallbackImg: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85",
           description: "Jumbo Gulf wild shrimp tossed in slow-cooked black garlic confit, scallions, and silky wheat noodles with savory umami reduction.",
           goodIngredients: [
             {
@@ -673,7 +876,8 @@
           category: 'prep',
           halalStatus: "100% Halal Certified Organic Chicken Breast",
           macros: "48g Protein • 38g Carbs • 16g Fats • 490 kcal",
-          img: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85",
+          img: "public/crispy-katsu.jpg",
+          fallbackImg: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85",
           description: "Air-crisped organic chicken breast in light artisanal panko, drizzled with homemade ginger-honey tonkatsu sauce over shredded purple cabbage.",
           goodIngredients: [
             {
@@ -700,7 +904,8 @@
           category: 'prep',
           halalStatus: "100% Halal Certified Chicken & Wild Shrimp",
           macros: "46g Protein • 54g Carbs • 18g Fats • 560 kcal",
-          img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=85",
+          img: "public/cajun-pasta.jpg",
+          fallbackImg: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=85",
           description: "Tender halal chicken strips and wild shrimp sautéed with sweet tri-color peppers in a fragrant Caribbean coconut cream jerk sauce.",
           goodIngredients: [
             {
@@ -727,7 +932,8 @@
           category: 'signature',
           halalStatus: "100% Halal Certified Free-Range Chicken",
           macros: "42g Protein • 18g Carbs • 22g Fats • 440 kcal",
-          img: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=1200&q=85",
+          img: "public/chicken-wings.jpg",
+          fallbackImg: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=1200&q=85",
           description: "Crispy oven-roasted halal chicken wings glazed in raw clover honey, coconut aminos, fresh grated ginger root, and toasted sesame.",
           goodIngredients: [
             {
@@ -818,6 +1024,10 @@
                       <img 
                         src={item.img} 
                         alt={item.name} 
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = item.fallbackImg || 'public/prime-steak.jpg';
+                        }}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/85 via-transparent to-transparent"></div>
