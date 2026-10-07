@@ -10,31 +10,31 @@ const CloseIcon = () => (
 );
 
 const UtensilsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
 );
 
 const DumbbellIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.6 21.4l-5-5 .4-1.9 1.5-1.5-2-2-1.5 1.5-1.9.4-5-5"/><path d="M21.4 18.6l-5-5-1.9.4-1.5-1.5-2-2 1.5-1.5.4-1.9-5-5"/><path d="M6 10.4 3.6 12.8a2.83 2.83 0 1 0 4 4l2.4-2.4"/><path d="M13.6 18l2.4 2.4a2.83 2.83 0 1 0 4-4l-2.4-2.4"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.6 21.4l-5-5 .4-1.9 1.5-1.5-2-2-1.5 1.5-1.9.4-5-5"/><path d="M21.4 18.6l-5-5-1.9.4-1.5-1.5-2-2 1.5-1.5.4-1.9-5-5"/><path d="M6 10.4 3.6 12.8a2.83 2.83 0 1 0 4 4l2.4-2.4"/><path d="M13.6 18l2.4 2.4a2.83 2.83 0 1 0 4-4l-2.4-2.4"/></svg>
 );
 
 const CalendarIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-);
-
-const AwardIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
 );
 
 const HalalBadgeIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
 );
 
 const LeafIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
 );
 
 const HeartPulseIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+);
+
+const SparklesIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
 );
 
 // --- Header ---
@@ -59,13 +59,15 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-950/95 py-3.5 shadow-xl backdrop-blur-md border-b border-yellow-500/20' : 'bg-emerald-950/80 py-5 backdrop-blur-sm'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-950/95 py-3 shadow-xl backdrop-blur-md border-b border-yellow-500/20' : 'bg-emerald-950/80 py-5 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl sm:text-2xl font-serif font-bold text-yellow-500 tracking-widest flex items-center gap-2">
-              <span>CHEF ANTHONY</span>
-              <span className="w-2 h-2 rounded-full bg-yellow-400 inline-block"></span>
+            <a href="#" className="flex items-center gap-2 group">
+              <span className="text-xl sm:text-2xl font-serif font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500">
+                CHEF ANTHONY
+              </span>
+              <span className="w-2 h-2 rounded-full bg-yellow-400 inline-block shadow-sm shadow-yellow-400 group-hover:scale-125 transition-transform"></span>
             </a>
           </div>
           
@@ -76,23 +78,22 @@ const Header = () => {
               </a>
             ))}
             
-            {/* Top Halal Badge */}
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/40 text-yellow-400 text-xs font-bold tracking-wider">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/50 text-yellow-300 text-xs font-bold tracking-wider shadow-sm">
               <HalalBadgeIcon />
               <span>100% Halal</span>
-            </span>
+            </div>
 
-            <a href="#contact" className="bg-yellow-500 hover:bg-yellow-400 text-emerald-950 px-5 py-2 rounded-sm transition-all text-xs font-bold tracking-widest uppercase shadow-md shadow-yellow-500/20 transform hover:-translate-y-0.5">
+            <a href="#contact" className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-emerald-950 px-5 py-2.5 rounded-sm transition-all text-xs font-bold tracking-widest uppercase shadow-md shadow-yellow-500/20 transform hover:-translate-y-0.5">
               Book Consultation
             </a>
           </nav>
 
           <div className="lg:hidden flex items-center gap-2">
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/40 text-yellow-400 text-[11px] font-bold">
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/40 text-yellow-300 text-[11px] font-bold">
               <HalalBadgeIcon />
               <span>Halal</span>
             </span>
-            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-yellow-500 p-2 focus:outline-none" aria-label="Toggle menu">
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-yellow-400 p-2 focus:outline-none" aria-label="Toggle menu">
               {mobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
           </div>
@@ -116,7 +117,7 @@ const Header = () => {
               <a 
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-center bg-yellow-500 hover:bg-yellow-400 text-emerald-950 py-3 rounded-sm font-bold tracking-widest uppercase text-sm"
+                className="block text-center bg-yellow-500 hover:bg-yellow-400 text-emerald-950 py-3 rounded-sm font-bold tracking-widest uppercase text-sm shadow-md"
               >
                 Book Consultation
               </a>
@@ -129,6 +130,7 @@ const Header = () => {
 };
 
 // --- Chef Anthony Portrait Component ---
+// Clean framing with zero overlapping badges covering his name or face
 const ChefPortrait = ({ 
   src = '/chef-anthony.jpg', 
   altSrc = '/chef-anthony-original.jpg' 
@@ -138,60 +140,86 @@ const ChefPortrait = ({
   const currentSrc = viewMode === 'chef' ? src : altSrc;
 
   return (
-    <div className="relative group">
-      <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500/40 via-emerald-600/30 to-yellow-500/40 rounded-lg blur-lg opacity-75 group-hover:opacity-100 transition duration-700"></div>
+    <div className="relative w-full max-w-md mx-auto">
+      {/* Outer ambient glow */}
+      <div className="absolute -inset-1.5 bg-gradient-to-r from-yellow-500/40 via-emerald-600/30 to-yellow-500/40 rounded-xl blur-lg opacity-75 group-hover:opacity-100 transition duration-700"></div>
 
-      <div className="relative aspect-[3/4] overflow-hidden rounded-lg border-2 border-yellow-500/70 shadow-2xl bg-emerald-900">
-        {!imageLoaded && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-emerald-950">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-yellow-500 mb-3"></div>
-            <p className="text-yellow-400 text-xs uppercase tracking-widest">Chef Anthony Larsuel</p>
-          </div>
-        )}
+      <div className="relative rounded-xl overflow-hidden border-2 border-yellow-500/80 shadow-2xl bg-emerald-950">
         
-        <img 
-          src={currentSrc} 
-          alt="Chef Anthony Larsuel" 
-          onLoad={() => setImageLoaded(true)}
-          onError={(e) => {
-            if (e.target.src !== altSrc) {
-              e.target.src = altSrc;
-            }
-          }}
-          className={`w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-        />
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/85 via-transparent to-black/20 pointer-events-none"></div>
-
-        {/* Lower Tag */}
-        <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between pointer-events-none">
-          <div className="backdrop-blur-md bg-emerald-950/90 border border-yellow-500/40 px-3.5 py-1.5 rounded text-xs text-yellow-400 uppercase tracking-widest font-semibold flex items-center gap-2 shadow-lg">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Executive Chef Anthony Larsuel
+        {/* Top Badges Bar (Inside photo, clean top corners, zero interference with lower portrait) */}
+        <div className="absolute top-3 left-3 right-3 z-20 flex items-center justify-between pointer-events-auto">
+          {/* Halal Certified Pill (Top Left - Never obscures his name) */}
+          <div className="backdrop-blur-md bg-emerald-950/90 border border-yellow-500/60 px-3 py-1 rounded-full text-[11px] font-bold text-yellow-300 uppercase tracking-wider flex items-center gap-1.5 shadow-lg">
+            <HalalBadgeIcon />
+            <span>100% Halal</span>
           </div>
-        </div>
 
-        {/* Switcher button */}
-        <div className="absolute top-4 right-4">
+          {/* Look Switcher Toggle Button (Top Right) */}
           <button 
             type="button"
             onClick={() => setViewMode(prev => prev === 'chef' ? 'original' : 'chef')}
-            className="bg-emerald-950/85 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded border border-yellow-500/50 backdrop-blur-md transition-all shadow-md cursor-pointer"
-            title="Toggle between Executive Chef portrait and original photo"
+            className="backdrop-blur-md bg-emerald-950/90 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-yellow-500/60 transition-all shadow-lg cursor-pointer"
+            title="Toggle between Executive Chef uniform and original look"
           >
-            {viewMode === 'chef' ? 'Casual Look' : 'Chef Uniform'}
+            {viewMode === 'chef' ? '👔 Casual Look' : '👨‍🍳 Chef Uniform'}
           </button>
         </div>
-      </div>
-      
-      {/* Floating Badges */}
-      <div className="absolute -bottom-6 -left-6 bg-emerald-900/95 backdrop-blur-md border border-yellow-500 p-4 shadow-2xl rounded-sm hidden md:flex items-center gap-3 transform -rotate-1 hover:rotate-0 transition-transform">
-        <div className="w-10 h-10 rounded-full bg-yellow-500/20 border border-yellow-500/40 flex items-center justify-center text-yellow-400">
-          <HalalBadgeIcon />
+
+        {/* Portrait Image */}
+        <div className="aspect-[3/4] relative overflow-hidden bg-emerald-900">
+          {!imageLoaded && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-emerald-950">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-yellow-500 mb-3"></div>
+              <p className="text-yellow-400 text-xs uppercase tracking-widest font-serif">Chef Anthony Larsuel</p>
+            </div>
+          )}
+          
+          <img 
+            src={currentSrc} 
+            alt="Chef Anthony Larsuel" 
+            onLoad={() => setImageLoaded(true)}
+            onError={(e) => {
+              if (e.target.src !== altSrc) {
+                e.target.src = altSrc;
+              }
+            }}
+            className={`w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+          />
+          
+          {/* Subtle bottom vignette to blend naturally into the nameplate */}
+          <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent opacity-80 pointer-events-none"></div>
         </div>
-        <div>
-          <p className="text-xl font-serif font-bold text-yellow-400 leading-none">100% HALAL</p>
-          <p className="text-[11px] text-gray-200 uppercase tracking-widest mt-1 font-semibold">Certified Meats<br/>& Clean Fuel</p>
+
+        {/* Dedicated Unobstructed Nameplate (Permanently clear, highly readable, no badges covering) */}
+        <div className="p-4 bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-t border-yellow-500/40 flex items-center justify-between">
+          <div>
+            <span className="text-[10px] uppercase font-bold tracking-widest text-yellow-400 block mb-0.5">
+              Executive Culinary Artist
+            </span>
+            <h3 className="font-serif font-bold text-white text-lg sm:text-xl tracking-wide leading-tight">
+              Chef Anthony Larsuel
+            </h3>
+          </div>
+
+          <div className="text-right">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-800/80 border border-emerald-600/50 text-[11px] font-semibold text-emerald-200">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Booking Open
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Under-Card Feature Accolades (Positioned BELOW the card so it never overlaps the photo or name) */}
+      <div className="mt-4 grid grid-cols-2 gap-2 text-center">
+        <div className="bg-emerald-950/80 border border-yellow-500/30 p-2.5 rounded-lg shadow-md">
+          <p className="text-yellow-400 font-serif font-bold text-base leading-none">100% Zabiha</p>
+          <p className="text-[10px] text-gray-300 uppercase tracking-widest mt-1">Certified Halal Butchery</p>
+        </div>
+        <div className="bg-emerald-950/80 border border-yellow-500/30 p-2.5 rounded-lg shadow-md">
+          <p className="text-yellow-400 font-serif font-bold text-base leading-none">Zero Seed Oils</p>
+          <p className="text-[10px] text-gray-300 uppercase tracking-widest mt-1">Avocado & Olive Only</p>
         </div>
       </div>
     </div>
@@ -201,80 +229,97 @@ const ChefPortrait = ({
 // --- Hero Section ---
 const Hero = () => {
   return (
-    <section className="relative bg-[#052217] min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <section className="relative bg-[#052217] min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+      {/* Background ambient lighting */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-1/4 -right-20 w-96 h-96 rounded-full bg-emerald-700/20 blur-[120px]"></div>
-        <div className="absolute bottom-10 -left-20 w-96 h-96 rounded-full bg-yellow-600/15 blur-[120px]"></div>
+        <div className="absolute top-1/4 -right-20 w-96 h-96 rounded-full bg-emerald-700/20 blur-[130px]"></div>
+        <div className="absolute bottom-10 -left-20 w-96 h-96 rounded-full bg-yellow-600/15 blur-[130px]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(#eab308_1px,transparent_1px)] [background-size:36px_36px] opacity-[0.03]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          
+          {/* Hero Left Content */}
           <div className="lg:w-7/12 text-center lg:text-left">
             
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">
-                <span className="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
-                Elevating Culinary & Athletic Standards
+            {/* Top Quality Assurance Badges */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-6">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-500/15 border border-yellow-500/40 text-yellow-300 text-xs font-bold tracking-[0.2em] uppercase">
+                <SparklesIcon />
+                <span>Culinary & Athletic Excellence</span>
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900 border border-yellow-500/60 text-yellow-400 text-xs font-bold uppercase tracking-wider shadow-sm">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/60 text-yellow-400 text-xs font-bold uppercase tracking-wider shadow-sm">
                 <HalalBadgeIcon />
                 <span>100% Halal Certified</span>
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.1] mb-6">
+            {/* Main Headline */}
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black text-white leading-[1.08] mb-6">
               Chef Anthony <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-600">
                 Larsuel
               </span>
             </h1>
 
+            {/* Subheading / Value Proposition */}
             <p className="text-gray-300 text-base sm:text-lg lg:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
-              Premium private dining, bespoke sports nutrition, and high-protein meal prep prepared exclusively with <strong className="text-yellow-400 font-semibold">100% Halal certified meats</strong> and wholesome, nutrient-dense ingredients.
+              Michelin-level flavor meets elite sports nutrition. Custom macro-calibrated meal prep and bespoke private dining, prepared exclusively with <strong className="text-yellow-400 font-semibold">100% Halal certified meats</strong> and clean, nutrient-dense ingredients.
             </p>
 
+            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-              <a href="#menu" className="w-full sm:w-auto bg-gradient-to-r from-emerald-700 to-emerald-800 hover:from-emerald-600 hover:to-emerald-700 text-white px-8 py-4 rounded-sm transition-all text-sm uppercase tracking-widest font-semibold text-center shadow-lg shadow-emerald-950/60 border border-emerald-600/50">
+              <a 
+                href="#menu" 
+                className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-emerald-950 font-bold px-8 py-4 rounded-sm transition-all text-sm uppercase tracking-widest text-center shadow-xl shadow-yellow-500/20 transform hover:-translate-y-0.5"
+              >
                 Explore Halal Menu
               </a>
-              <a href="#contact" className="w-full sm:w-auto bg-transparent border-2 border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-emerald-950 px-8 py-4 rounded-sm transition-all text-sm uppercase tracking-widest font-bold text-center">
-                Book Consultation
+              <a 
+                href="#contact" 
+                className="w-full sm:w-auto bg-transparent border-2 border-yellow-500/80 text-yellow-400 hover:bg-yellow-500 hover:text-emerald-950 px-8 py-4 rounded-sm transition-all text-sm uppercase tracking-widest font-bold text-center"
+              >
+                Book a Consultation
               </a>
             </div>
 
-            {/* Quick Highlights Bar */}
+            {/* Quick Accreditation Ribbon */}
             <div className="mt-12 pt-8 border-t border-emerald-900/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-              <div className="p-2">
+              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
                 <p className="text-2xl font-serif font-bold text-yellow-400">100%</p>
                 <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold flex items-center justify-center lg:justify-start gap-1">
                   <HalalBadgeIcon /> Halal Certified
                 </p>
               </div>
-              <div className="p-2">
+              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
                 <p className="text-2xl font-serif font-bold text-yellow-400">Zero</p>
-                <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Seed Oils Used</p>
+                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold">Seed Oils</p>
               </div>
-              <div className="p-2">
+              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
                 <p className="text-2xl font-serif font-bold text-yellow-400">5★</p>
-                <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Private Dining</p>
+                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold">Private Dining</p>
               </div>
-              <div className="p-2">
+              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
                 <p className="text-2xl font-serif font-bold text-yellow-400">Athlete</p>
-                <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Macro Precision</p>
+                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold">Macro Precision</p>
               </div>
             </div>
+
           </div>
           
-          <div className="lg:w-5/12 w-full max-w-md lg:max-w-full">
+          {/* Hero Right Portrait Card */}
+          <div className="lg:w-5/12 w-full flex justify-center">
             <ChefPortrait src="/chef-anthony.jpg" altSrc="/chef-anthony-original.jpg" />
           </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-// --- Halal Certification & Ingredient Integrity Banner ---
+// --- Halal Certification Standards Section ---
 const HalalStandards = () => {
   const pillars = [
     {
@@ -292,11 +337,10 @@ const HalalStandards = () => {
   ];
 
   return (
-    <section id="halal" className="py-16 bg-[#041a12] border-y border-yellow-500/20 text-white relative">
+    <section id="halal" className="py-20 bg-[#041a12] border-y border-yellow-500/20 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-emerald-950 via-emerald-900/60 to-emerald-950 border border-yellow-500/40 rounded-lg p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div className="bg-gradient-to-r from-emerald-950 via-emerald-900/60 to-emerald-950 border border-yellow-500/40 rounded-xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
           
-          {/* Subtle background glow */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-10 pb-8 border-b border-emerald-800">
@@ -310,7 +354,7 @@ const HalalStandards = () => {
               </h2>
             </div>
             
-            <div className="flex items-center gap-3 bg-emerald-950/80 px-5 py-3 rounded-lg border border-yellow-500/60 shadow-lg">
+            <div className="flex items-center gap-4 bg-emerald-950/90 px-6 py-3.5 rounded-xl border border-yellow-500/60 shadow-lg">
               <div className="w-12 h-12 rounded-full bg-yellow-500 text-emerald-950 flex items-center justify-center font-bold text-2xl font-serif">
                 حلال
               </div>
@@ -323,7 +367,7 @@ const HalalStandards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pillars.map((pillar, idx) => (
-              <div key={idx} className="bg-emerald-950/70 p-6 rounded-md border border-emerald-800/80 hover:border-yellow-500/50 transition-colors">
+              <div key={idx} className="bg-emerald-950/70 p-6 rounded-lg border border-emerald-800/80 hover:border-yellow-500/50 transition-colors">
                 <div className="w-8 h-8 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-bold text-sm mb-4">
                   0{idx + 1}
                 </div>
@@ -345,8 +389,9 @@ const About = () => {
     <section id="about" className="py-24 bg-gradient-to-b from-[#052217] to-emerald-950 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-lg overflow-hidden border border-yellow-500/40 shadow-2xl">
+            <div className="relative rounded-xl overflow-hidden border border-yellow-500/50 shadow-2xl">
               <img 
                 src="/chef-anthony.jpg" 
                 alt="Chef Anthony Larsuel" 
@@ -378,29 +423,30 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-emerald-900/40 border border-emerald-800 p-4 rounded-sm">
-                <div className="flex items-center gap-2 mb-1">
+              <div className="bg-emerald-900/40 border border-emerald-800 p-5 rounded-lg">
+                <div className="flex items-center gap-2 mb-2">
                   <HalalBadgeIcon />
                   <h4 className="text-yellow-400 font-bold uppercase tracking-wider text-sm">Certified Halal Proteins</h4>
                 </div>
-                <p className="text-gray-300 text-xs leading-normal">Grass-fed lamb, prime beef, and cage-free chicken rigorously certified and ethically raised.</p>
+                <p className="text-gray-300 text-xs leading-relaxed">Grass-fed lamb, prime beef, and cage-free chicken rigorously certified and ethically raised.</p>
               </div>
-              <div className="bg-emerald-900/40 border border-emerald-800 p-4 rounded-sm">
-                <div className="flex items-center gap-2 mb-1">
+              <div className="bg-emerald-900/40 border border-emerald-800 p-5 rounded-lg">
+                <div className="flex items-center gap-2 mb-2">
                   <HeartPulseIcon />
                   <h4 className="text-yellow-400 font-bold uppercase tracking-wider text-sm">Athlete Macro Accuracy</h4>
                 </div>
-                <p className="text-gray-300 text-xs leading-normal">Precision high-protein formulas with transparent nutritional breakdowns for peak physical output.</p>
+                <p className="text-gray-300 text-xs leading-relaxed">Precision high-protein formulas with transparent nutritional breakdowns for peak physical output.</p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-// --- Comprehensive Menu & Ingredients Section ---
+// --- Menu & Good Ingredients Section ---
 const MenuGallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [expandedDish, setExpandedDish] = useState(null);
@@ -635,7 +681,7 @@ const MenuGallery = () => {
             return (
               <div 
                 key={item.id} 
-                className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group"
+                className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group"
               >
                 {/* Image Container with Badges */}
                 <div className="relative h-64 overflow-hidden bg-gray-100">
@@ -763,7 +809,7 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicesList.map((service, index) => (
-            <div key={index} className="bg-white p-8 border-t-4 border-emerald-800 shadow-md hover:shadow-xl transition-shadow group">
+            <div key={index} className="bg-white p-8 border-t-4 border-emerald-800 rounded-lg shadow-md hover:shadow-xl transition-shadow group">
               <div className="text-yellow-600 mb-6 group-hover:scale-110 transition-transform origin-left">
                 {service.icon}
               </div>
@@ -831,7 +877,7 @@ const Contact = () => {
 
           <div className="lg:w-1/2">
             {submitted ? (
-              <div className="bg-emerald-900/60 p-10 border border-yellow-500/50 rounded-sm text-center">
+              <div className="bg-emerald-900/60 p-10 border border-yellow-500/50 rounded-lg text-center">
                 <div className="w-16 h-16 bg-yellow-500 text-emerald-950 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">
                   ✓
                 </div>
@@ -839,7 +885,7 @@ const Contact = () => {
                 <p className="text-gray-300">Thank you! Chef Anthony will review your consultation request and reach out shortly.</p>
               </div>
             ) : (
-              <form className="bg-emerald-900/40 p-8 border border-emerald-800/80 rounded-sm shadow-xl backdrop-blur-sm" onSubmit={handleSubmit}>
+              <form className="bg-emerald-900/40 p-8 border border-emerald-800/80 rounded-xl shadow-xl backdrop-blur-sm" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">First Name</label>
@@ -867,7 +913,7 @@ const Contact = () => {
                   <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">Message Details & Dietary Goals</label>
                   <textarea rows="4" className="w-full bg-emerald-950 border border-emerald-700/80 text-white px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors rounded-sm" placeholder="Tell Chef Anthony about your fitness goals, target macros, or preferred dishes from the menu..."></textarea>
                 </div>
-                <button type="submit" className="w-full bg-yellow-500 hover:bg-yellow-400 text-emerald-950 font-bold uppercase tracking-widest py-4 transition-all rounded-sm shadow-lg shadow-yellow-500/20 cursor-pointer">
+                <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-emerald-950 font-bold uppercase tracking-widest py-4 transition-all rounded-sm shadow-lg shadow-yellow-500/20 cursor-pointer">
                   Send Inquiry
                 </button>
               </form>
