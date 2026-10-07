@@ -1,8 +1,8 @@
-# Chef Anthony Larsuel - Landing Page
+# Chef Shubee - Landing Page
 
-A luxury, modern landing page for **Chef Anthony Larsuel**, showcasing elite private dining, bespoke sports nutrition, and high-protein meal prep.
+A luxury, modern landing page for **Chef Shubee**, showcasing elite private dining, bespoke sports nutrition, and high-protein meal prep.
 
-Designed with a rich emerald green (`#052217`) and gold aesthetic, featuring Chef Anthony's custom executive portrait and athlete-focused macro nutrition highlights.
+Designed with a rich emerald green (`#052217`) and gold aesthetic, featuring Chef Shubee's custom executive portrait and athlete-focused macro nutrition highlights.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSohailAa%2Fchef-anthony-landing)
 
@@ -12,12 +12,12 @@ Designed with a rich emerald green (`#052217`) and gold aesthetic, featuring Che
 
 ## Features
 
-- **Executive Chef Portrait**: Showcases Chef Anthony in an executive uniform with luxury framing, status badges, and an interactive look switcher (`Casual Look` vs `Chef Uniform`).
+- **Executive Chef Portrait**: Showcases Chef Shubee in an executive uniform with luxury framing, status badges, and an interactive look switcher (`Casual Look` vs `Chef Uniform`).
 - **100% Halal Certified**: Official certification badges, hand-slaughtered Zabiha integrity guarantee, and zero inflammatory seed oils (cooked exclusively in avocado oil, cold-pressed EVOO, and grass-fed ghee).
 - **Wholesome Ingredients Breakdown**: Each signature dish features an interactive "What's Good in It" benefits breakdown (e.g. bioavailable heme iron, CLA, astaxanthin, allicin, and curcumin).
 - **Comprehensive Sections**:
   - **Hero**: Tagline, booking consultation CTA, and trust stats (100% Halal, 5★ Private Dining, Macro Precision).
-  - **About**: "The Philosophy & Craft of Chef Anthony Larsuel" with culinary philosophy and athletic nutrition focus.
+  - **About**: "The Philosophy & Craft of Chef Shubee" with culinary philosophy and athletic nutrition focus.
   - **Halal Standards**: Dedicated guarantee card detailing butchery and oil standards.
   - **Signature Menu Gallery**: Interactive menu with macro breakdowns and wholesome ingredients.
   - **Services**: Halal private dining, sports nutrition, and weekly meal prep.
