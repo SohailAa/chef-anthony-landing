@@ -126,55 +126,58 @@
       return (
         <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-950/98 py-3.5 shadow-2xl backdrop-blur-md border-b border-yellow-500/30' : 'bg-emerald-950/85 py-6 backdrop-blur-sm'}`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center gap-4">
               
               <div className="flex-shrink-0">
-                <a href="#" className="flex items-center gap-2.5 group">
-                  <span className="text-2xl sm:text-3xl font-serif font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500">
+                <a href="#" className="flex items-center gap-2 group">
+                  <span className="text-xl sm:text-2xl xl:text-3xl font-serif font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 whitespace-nowrap">
                     CHEF ANTHONY
                   </span>
-                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block shadow-md shadow-yellow-400 group-hover:scale-125 transition-transform"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block shadow-md shadow-yellow-400 group-hover:scale-125 transition-transform flex-shrink-0"></span>
                 </a>
               </div>
               
-              <nav className="hidden lg:flex items-center space-x-8">
+              {/* Desktop Nav - Active on xl screens (1280px+) where full links fit comfortably without wrapping */}
+              <nav className="hidden xl:flex items-center space-x-6 2xl:space-x-8 flex-shrink-0">
                 {navLinks.map((link) => (
                   <a 
                     key={link.name} 
                     href={link.href} 
-                    className="text-gray-100 hover:text-yellow-400 transition-colors text-sm font-bold tracking-widest uppercase"
+                    className="text-gray-100 hover:text-yellow-400 transition-colors text-xs 2xl:text-sm font-bold tracking-widest uppercase whitespace-nowrap flex-shrink-0"
                   >
                     {link.name}
                   </a>
                 ))}
                 
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/90 border border-yellow-500/60 text-yellow-300 text-xs font-black tracking-wider shadow-sm">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/90 border border-yellow-500/60 text-yellow-300 text-xs font-black tracking-wider shadow-sm whitespace-nowrap flex-shrink-0">
                   <HalalBadgeIcon />
                   <span>100% HALAL CERTIFIED</span>
                 </div>
 
                 <a 
                   href="#contact" 
-                  className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-emerald-950 px-6 py-3 rounded font-black tracking-widest uppercase text-xs shadow-lg shadow-yellow-500/25 transform hover:-translate-y-0.5 transition-all"
+                  className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-emerald-950 px-5 py-2.5 rounded font-black tracking-widest uppercase text-xs shadow-lg shadow-yellow-500/25 transform hover:-translate-y-0.5 transition-all whitespace-nowrap flex-shrink-0"
                 >
                   Book Now
                 </a>
               </nav>
 
-              <div className="lg:hidden flex items-center gap-3">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900 border border-yellow-500/50 text-yellow-300 text-xs font-bold">
+              {/* Mobile/Tablet Menu Button - Shown on screens below xl */}
+              <div className="xl:hidden flex items-center gap-3">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900 border border-yellow-500/50 text-yellow-300 text-xs font-bold whitespace-nowrap">
                   <HalalBadgeIcon />
-                  <span>Halal</span>
+                  <span>100% Halal</span>
                 </span>
-                <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-yellow-400 p-2 focus:outline-none" aria-label="Toggle menu">
+                <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-yellow-400 p-2 focus:outline-none cursor-pointer" aria-label="Toggle menu">
                   {mobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
                 </button>
               </div>
             </div>
           </div>
 
+          {/* Mobile Nav Dropdown */}
           {mobileMenuOpen && (
-            <div className="lg:hidden bg-emerald-950/98 backdrop-blur-2xl border-t border-emerald-800/90 absolute w-full shadow-2xl">
+            <div className="xl:hidden bg-emerald-950/98 backdrop-blur-2xl border-t border-emerald-800/90 absolute w-full shadow-2xl">
               <div className="px-5 pt-4 pb-8 space-y-3">
                 {navLinks.map((link) => (
                   <a 
@@ -206,6 +209,8 @@
     const heroFeaturedDishes = [
       {
         id: 'chef',
+        emoji: '👨‍🍳',
+        shortName: 'Chef Anthony',
         tabLabel: '👨‍🍳 Chef Anthony',
         name: 'Chef Anthony Larsuel',
         tagline: 'Executive Culinary Artist & Sports Nutritionist',
@@ -217,7 +222,9 @@
       },
       {
         id: 'lamb',
-        tabLabel: '🍖 Halal Lamb Chops',
+        emoji: '🍖',
+        shortName: 'Lamb Chops',
+        tabLabel: '🍖 Lamb Chops',
         name: 'Signature Halal Lamb Chops',
         tagline: 'New Zealand Grass-Fed • Confit Rosemary',
         macro: '52g Protein • High Bioavailable Iron & CLA',
@@ -228,7 +235,9 @@
       },
       {
         id: 'steak',
-        tabLabel: '🥩 Prime Angus Steak',
+        emoji: '🥩',
+        shortName: 'Prime Steak',
+        tabLabel: '🥩 Prime Steak',
         name: 'Prime Halal Black Angus Steak',
         tagline: '100% Halal Prime Cut • Herb Compound Butter',
         macro: '58g Protein • Natural Creatine & Complete Aminos',
@@ -239,7 +248,9 @@
       },
       {
         id: 'shrimp',
-        tabLabel: '🦐 Garlic Wild Shrimp',
+        emoji: '🦐',
+        shortName: 'Wild Shrimp',
+        tabLabel: '🦐 Wild Shrimp',
         name: 'Black Garlic Noodles & Gulf Shrimp',
         tagline: 'Wild-Caught Seafood • Fermented Black Garlic',
         macro: '44g Protein • High Astaxanthin Antioxidants',
@@ -250,7 +261,9 @@
       },
       {
         id: 'katsu',
-        tabLabel: '🍗 Crispy Halal Katsu',
+        emoji: '🍗',
+        shortName: 'Halal Katsu',
+        tabLabel: '🍗 Halal Katsu',
         name: 'Crispy Organic Chicken Katsu',
         tagline: 'Air-Crisped in Avocado Oil • Raw Honey Tonkatsu',
         macro: '48g Protein • Pure Leucine for Muscle Synthesis',
@@ -261,7 +274,9 @@
       },
       {
         id: 'salmon',
-        tabLabel: '🐟 Wild Alaskan Salmon',
+        emoji: '🐟',
+        shortName: 'Wild Salmon',
+        tabLabel: '🐟 Wild Salmon',
         name: 'Wild Salmon & Golden Turmeric Rice',
         tagline: 'Pacific Wild-Caught • Anti-Inflammatory Curcumin',
         macro: '46g Protein • High Omega-3 EPA/DHA',
@@ -449,21 +464,23 @@
                   </div>
                 </div>
 
-                {/* Interactive Showcase Navigator Tabs */}
-                <div className="w-full flex items-center justify-start gap-1.5 overflow-x-auto pb-2 mb-3 scrollbar-none">
+                {/* Elegant 3x2 Grid Selector (Every Dish Fully Legible, Never Truncated) */}
+                <div className="w-full grid grid-cols-3 gap-2 mb-3.5">
                   {heroFeaturedDishes.map((item, idx) => {
                     const isActive = activeTab === idx;
                     return (
                       <button
                         key={item.id}
+                        type="button"
                         onClick={() => handleSelectDish(idx)}
-                        className={`relative px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer overflow-hidden ${
+                        className={`relative px-2 py-2 rounded-xl text-center transition-all cursor-pointer overflow-hidden flex items-center justify-center gap-1.5 border text-[11px] sm:text-xs font-bold tracking-wider uppercase ${
                           isActive
-                            ? 'bg-yellow-500 text-emerald-950 shadow-xl font-black scale-105 ring-2 ring-yellow-400'
-                            : 'bg-emerald-900/80 text-gray-200 hover:bg-emerald-800 hover:text-white border border-emerald-700/80'
+                            ? 'bg-gradient-to-r from-yellow-500 to-amber-500 text-emerald-950 border-yellow-300 shadow-xl font-black scale-[1.03] ring-1 ring-yellow-300 z-10'
+                            : 'bg-emerald-900/80 hover:bg-emerald-800 text-gray-200 border-emerald-700/70 hover:border-yellow-500/50'
                         }`}
                       >
-                        <span>{item.tabLabel}</span>
+                        <span className="text-sm flex-shrink-0">{item.emoji}</span>
+                        <span className="truncate whitespace-nowrap">{item.shortName}</span>
                         {isActive && isAutoRotating && !isHovered && (
                           <span 
                             className="absolute bottom-0 left-0 h-1 bg-emerald-950/80 transition-all duration-75"
