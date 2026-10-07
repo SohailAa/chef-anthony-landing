@@ -4,16 +4,23 @@ A luxury, modern landing page for **Chef Anthony Larsuel**, showcasing elite pri
 
 Designed with a rich emerald green (`#052217`) and gold aesthetic, featuring Chef Anthony's custom executive portrait and athlete-focused macro nutrition highlights.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSohailAa%2Fchef-anthony-landing)
+
+**Live Demo (Vercel)**: [https://temporary-swift-orion-59ukr07.vercel.app](https://temporary-swift-orion-59ukr07.vercel.app)
+
 ---
 
 ## Features
 
 - **Executive Chef Portrait**: Showcases Chef Anthony in an executive uniform with luxury framing, status badges, and an interactive look switcher (`Casual Look` vs `Chef Uniform`).
+- **100% Halal Certified**: Official certification badges, hand-slaughtered Zabiha integrity guarantee, and zero inflammatory seed oils (cooked exclusively in avocado oil, cold-pressed EVOO, and grass-fed ghee).
+- **Wholesome Ingredients Breakdown**: Each signature dish features an interactive "What's Good in It" benefits breakdown (e.g. bioavailable heme iron, CLA, astaxanthin, allicin, and curcumin).
 - **Comprehensive Sections**:
-  - **Hero**: Tagline, booking consultation CTA, and trust stats (5★ Private Dining, 100% Macro Precision).
-  - **About**: "The Philosophy & Craft of Chef Anthony Larsuel" with culinary philosophy, athletic background, and service pillars.
-  - **Services**: Private dining, custom sports nutrition, and macro-balanced weekly meal prep.
-  - **Signature Menu Gallery**: Highlighting Garlic Noodles & Shrimp, Crispy Katsu, Signature Lamb Chops, Cajun & Rasta Pasta, Premium Steak, and Glazed Chicken Wings.
+  - **Hero**: Tagline, booking consultation CTA, and trust stats (100% Halal, 5★ Private Dining, Macro Precision).
+  - **About**: "The Philosophy & Craft of Chef Anthony Larsuel" with culinary philosophy and athletic nutrition focus.
+  - **Halal Standards**: Dedicated guarantee card detailing butchery and oil standards.
+  - **Signature Menu Gallery**: Interactive menu with macro breakdowns and wholesome ingredients.
+  - **Services**: Halal private dining, sports nutrition, and weekly meal prep.
   - **Inquiry & Booking Form**: Interactive consultation request form with feedback state.
 - **Mobile Responsive**: Smooth navigation with mobile burger menu and polished responsive layouts.
 
