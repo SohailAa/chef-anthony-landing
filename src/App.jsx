@@ -2,39 +2,39 @@ import React, { useState, useEffect } from 'react';
 
 // --- Icons ---
 const MenuIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
 );
 
 const CloseIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
 );
 
 const UtensilsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
 );
 
 const DumbbellIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.6 21.4l-5-5 .4-1.9 1.5-1.5-2-2-1.5 1.5-1.9.4-5-5"/><path d="M21.4 18.6l-5-5-1.9.4-1.5-1.5-2-2 1.5-1.5.4-1.9-5-5"/><path d="M6 10.4 3.6 12.8a2.83 2.83 0 1 0 4 4l2.4-2.4"/><path d="M13.6 18l2.4 2.4a2.83 2.83 0 1 0 4-4l-2.4-2.4"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.6 21.4l-5-5 .4-1.9 1.5-1.5-2-2-1.5 1.5-1.9.4-5-5"/><path d="M21.4 18.6l-5-5-1.9.4-1.5-1.5-2-2 1.5-1.5.4-1.9-5-5"/><path d="M6 10.4 3.6 12.8a2.83 2.83 0 1 0 4 4l2.4-2.4"/><path d="M13.6 18l2.4 2.4a2.83 2.83 0 1 0 4-4l-2.4-2.4"/></svg>
 );
 
 const CalendarIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
 );
 
 const HalalBadgeIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
 );
 
 const LeafIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
 );
 
 const HeartPulseIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
 );
 
 const SparklesIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
 );
 
 // --- Header ---
@@ -51,45 +51,56 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
+    { name: 'About Chef', href: '#about' },
     { name: 'Halal Standards', href: '#halal' },
-    { name: 'Menu & Ingredients', href: '#menu' },
+    { name: 'Signature Menu', href: '#menu' },
     { name: 'Services', href: '#services' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Book Consultation', href: '#contact' },
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-950/95 py-3 shadow-xl backdrop-blur-md border-b border-yellow-500/20' : 'bg-emerald-950/80 py-5 backdrop-blur-sm'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-950/98 py-3.5 shadow-2xl backdrop-blur-md border-b border-yellow-500/30' : 'bg-emerald-950/85 py-6 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
+          
+          {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="flex items-center gap-2 group">
-              <span className="text-xl sm:text-2xl font-serif font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500">
+            <a href="#" className="flex items-center gap-2.5 group">
+              <span className="text-2xl sm:text-3xl font-serif font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500">
                 CHEF ANTHONY
               </span>
-              <span className="w-2 h-2 rounded-full bg-yellow-400 inline-block shadow-sm shadow-yellow-400 group-hover:scale-125 transition-transform"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block shadow-md shadow-yellow-400 group-hover:scale-125 transition-transform"></span>
             </a>
           </div>
           
-          <nav className="hidden lg:flex items-center space-x-7">
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-gray-200 hover:text-yellow-400 transition-colors text-xs font-semibold tracking-widest uppercase">
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className="text-gray-100 hover:text-yellow-400 transition-colors text-sm font-bold tracking-widest uppercase"
+              >
                 {link.name}
               </a>
             ))}
             
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/50 text-yellow-300 text-xs font-bold tracking-wider shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/90 border border-yellow-500/60 text-yellow-300 text-xs font-black tracking-wider shadow-sm">
               <HalalBadgeIcon />
-              <span>100% Halal</span>
+              <span>100% HALAL CERTIFIED</span>
             </div>
 
-            <a href="#contact" className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-emerald-950 px-5 py-2.5 rounded-sm transition-all text-xs font-bold tracking-widest uppercase shadow-md shadow-yellow-500/20 transform hover:-translate-y-0.5">
-              Book Consultation
+            <a 
+              href="#contact" 
+              className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-emerald-950 px-6 py-3 rounded font-black tracking-widest uppercase text-xs shadow-lg shadow-yellow-500/25 transform hover:-translate-y-0.5 transition-all"
+            >
+              Book Now
             </a>
           </nav>
 
-          <div className="lg:hidden flex items-center gap-2">
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/40 text-yellow-300 text-[11px] font-bold">
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden flex items-center gap-3">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900 border border-yellow-500/50 text-yellow-300 text-xs font-bold">
               <HalalBadgeIcon />
               <span>Halal</span>
             </span>
@@ -100,15 +111,16 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Mobile Nav Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-emerald-950/98 backdrop-blur-xl border-t border-emerald-800/80 absolute w-full shadow-2xl">
-          <div className="px-4 pt-3 pb-6 space-y-2">
+        <div className="lg:hidden bg-emerald-950/98 backdrop-blur-2xl border-t border-emerald-800/90 absolute w-full shadow-2xl">
+          <div className="px-5 pt-4 pb-8 space-y-3">
             {navLinks.map((link) => (
               <a 
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-3 text-center text-gray-200 hover:text-yellow-400 hover:bg-emerald-900/50 transition-colors text-sm font-medium tracking-widest uppercase border-b border-emerald-800/30"
+                className="block px-3 py-3.5 text-center text-gray-100 hover:text-yellow-400 hover:bg-emerald-900/60 transition-colors text-base font-bold tracking-widest uppercase border-b border-emerald-800/40"
               >
                 {link.name}
               </a>
@@ -117,9 +129,9 @@ const Header = () => {
               <a 
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-center bg-yellow-500 hover:bg-yellow-400 text-emerald-950 py-3 rounded-sm font-bold tracking-widest uppercase text-sm shadow-md"
+                className="block text-center bg-gradient-to-r from-yellow-500 to-amber-500 text-emerald-950 py-4 rounded font-black tracking-widest uppercase text-sm shadow-xl"
               >
-                Book Consultation
+                Book a Consultation
               </a>
             </div>
           </div>
@@ -129,191 +141,290 @@ const Header = () => {
   );
 };
 
-// --- Chef Anthony Portrait Component ---
-// Clean framing with zero overlapping badges covering his name or face
-const ChefPortrait = ({ 
-  src = '/chef-anthony.jpg', 
-  altSrc = '/chef-anthony-original.jpg' 
-}) => {
-  const [viewMode, setViewMode] = useState('chef');
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const currentSrc = viewMode === 'chef' ? src : altSrc;
+// --- Featured Hero Dishes Dataset ---
+const heroFeaturedDishes = [
+  {
+    id: 'chef',
+    tabLabel: '👨‍🍳 Chef Anthony',
+    name: 'Chef Anthony Larsuel',
+    tagline: 'Executive Chef & Sports Nutrition Specialist',
+    macro: 'Certified 100% Halal Culinary Mastery',
+    img: '/chef-anthony.jpg',
+    altImg: '/chef-anthony-original.jpg',
+    isChef: true,
+    desc: 'Specializing in Michelin-caliber private dining, high-protein athletic meal prep, and bespoke sports nutrition formulated without seed oils.'
+  },
+  {
+    id: 'lamb',
+    tabLabel: '🍖 Halal Lamb Chops',
+    name: 'Signature Halal Lamb Chops',
+    tagline: 'New Zealand Grass-Fed • Confit Rosemary',
+    macro: '52g Protein • High Bioavailable Iron & CLA',
+    img: 'https://images.unsplash.com/photo-1603894584373-5ac82bea3d76?auto=format&fit=crop&w=1200&q=85',
+    isChef: false,
+    desc: 'Thick-cut pasture-raised chops seared in garlic confit and cold-pressed extra virgin olive oil with a tart pomegranate-balsamic reduction.'
+  },
+  {
+    id: 'steak',
+    tabLabel: '🥩 Prime Angus Steak',
+    name: 'Prime Halal Black Angus Steak',
+    tagline: '100% Halal Prime Cut • Herb Compound Butter',
+    macro: '58g Protein • Natural Creatine & Complete Aminos',
+    img: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85',
+    isChef: false,
+    desc: 'Tender prime steak seared in grass-fed garlic herb butter, served with charred heirloom asparagus and 80-mineral Celtic sea salt.'
+  },
+  {
+    id: 'shrimp',
+    tabLabel: '🦐 Garlic Wild Shrimp',
+    name: 'Black Garlic Noodles & Gulf Shrimp',
+    tagline: 'Wild-Caught Seafood • Fermented Black Garlic',
+    macro: '44g Protein • High Astaxanthin Antioxidants',
+    img: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85',
+    isChef: false,
+    desc: 'Jumbo wild Gulf shrimp tossed in slow-cooked black garlic confit, crisp scallions, and silky artisanal wheat noodles.'
+  },
+  {
+    id: 'katsu',
+    tabLabel: '🍗 Crispy Halal Katsu',
+    name: 'Crispy Organic Chicken Katsu',
+    tagline: 'Air-Crisped in Avocado Oil • Raw Honey Tonkatsu',
+    macro: '48g Protein • Pure Leucine for Muscle Synthesis',
+    img: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85',
+    isChef: false,
+    desc: 'Organic chicken breast crisped in high-smoke-point avocado oil, drizzled with homemade ginger-honey glaze over antioxidant purple cabbage.'
+  }
+];
 
-  return (
-    <div className="relative w-full max-w-md mx-auto">
-      {/* Outer ambient glow */}
-      <div className="absolute -inset-1.5 bg-gradient-to-r from-yellow-500/40 via-emerald-600/30 to-yellow-500/40 rounded-xl blur-lg opacity-75 group-hover:opacity-100 transition duration-700"></div>
-
-      <div className="relative rounded-xl overflow-hidden border-2 border-yellow-500/80 shadow-2xl bg-emerald-950">
-        
-        {/* Top Badges Bar (Inside photo, clean top corners, zero interference with lower portrait) */}
-        <div className="absolute top-3 left-3 right-3 z-20 flex items-center justify-between pointer-events-auto">
-          {/* Halal Certified Pill (Top Left - Never obscures his name) */}
-          <div className="backdrop-blur-md bg-emerald-950/90 border border-yellow-500/60 px-3 py-1 rounded-full text-[11px] font-bold text-yellow-300 uppercase tracking-wider flex items-center gap-1.5 shadow-lg">
-            <HalalBadgeIcon />
-            <span>100% Halal</span>
-          </div>
-
-          {/* Look Switcher Toggle Button (Top Right) */}
-          <button 
-            type="button"
-            onClick={() => setViewMode(prev => prev === 'chef' ? 'original' : 'chef')}
-            className="backdrop-blur-md bg-emerald-950/90 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-yellow-500/60 transition-all shadow-lg cursor-pointer"
-            title="Toggle between Executive Chef uniform and original look"
-          >
-            {viewMode === 'chef' ? '👔 Casual Look' : '👨‍🍳 Chef Uniform'}
-          </button>
-        </div>
-
-        {/* Portrait Image */}
-        <div className="aspect-[3/4] relative overflow-hidden bg-emerald-900">
-          {!imageLoaded && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-emerald-950">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-yellow-500 mb-3"></div>
-              <p className="text-yellow-400 text-xs uppercase tracking-widest font-serif">Chef Anthony Larsuel</p>
-            </div>
-          )}
-          
-          <img 
-            src={currentSrc} 
-            alt="Chef Anthony Larsuel" 
-            onLoad={() => setImageLoaded(true)}
-            onError={(e) => {
-              if (e.target.src !== altSrc) {
-                e.target.src = altSrc;
-              }
-            }}
-            className={`w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-          />
-          
-          {/* Subtle bottom vignette to blend naturally into the nameplate */}
-          <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent opacity-80 pointer-events-none"></div>
-        </div>
-
-        {/* Dedicated Unobstructed Nameplate (Permanently clear, highly readable, no badges covering) */}
-        <div className="p-4 bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-t border-yellow-500/40 flex items-center justify-between">
-          <div>
-            <span className="text-[10px] uppercase font-bold tracking-widest text-yellow-400 block mb-0.5">
-              Executive Culinary Artist
-            </span>
-            <h3 className="font-serif font-bold text-white text-lg sm:text-xl tracking-wide leading-tight">
-              Chef Anthony Larsuel
-            </h3>
-          </div>
-
-          <div className="text-right">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-800/80 border border-emerald-600/50 text-[11px] font-semibold text-emerald-200">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Booking Open
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-      {/* Under-Card Feature Accolades (Positioned BELOW the card so it never overlaps the photo or name) */}
-      <div className="mt-4 grid grid-cols-2 gap-2 text-center">
-        <div className="bg-emerald-950/80 border border-yellow-500/30 p-2.5 rounded-lg shadow-md">
-          <p className="text-yellow-400 font-serif font-bold text-base leading-none">100% Zabiha</p>
-          <p className="text-[10px] text-gray-300 uppercase tracking-widest mt-1">Certified Halal Butchery</p>
-        </div>
-        <div className="bg-emerald-950/80 border border-yellow-500/30 p-2.5 rounded-lg shadow-md">
-          <p className="text-yellow-400 font-serif font-bold text-base leading-none">Zero Seed Oils</p>
-          <p className="text-[10px] text-gray-300 uppercase tracking-widest mt-1">Avocado & Olive Only</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// --- Hero Section ---
+// --- Hero Section (Food Front & Center on Page Land) ---
 const Hero = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const [casualView, setCasualView] = useState(false);
+
+  const activeItem = heroFeaturedDishes[activeTab];
+
   return (
-    <section className="relative bg-[#052217] min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
-      {/* Background ambient lighting */}
+    <section className="relative bg-[#052217] min-h-screen flex flex-col justify-center pt-28 pb-16 overflow-hidden">
+      
+      {/* Decorative ambient lighting */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-1/4 -right-20 w-96 h-96 rounded-full bg-emerald-700/20 blur-[130px]"></div>
-        <div className="absolute bottom-10 -left-20 w-96 h-96 rounded-full bg-yellow-600/15 blur-[130px]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(#eab308_1px,transparent_1px)] [background-size:36px_36px] opacity-[0.03]"></div>
+        <div className="absolute top-1/6 -right-20 w-[600px] h-[600px] rounded-full bg-emerald-600/20 blur-[150px]"></div>
+        <div className="absolute bottom-10 -left-20 w-[600px] h-[600px] rounded-full bg-amber-500/15 blur-[150px]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(#eab308_1px,transparent_1px)] [background-size:40px_40px] opacity-[0.04]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        
+        {/* Main Hero Split Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center pt-4">
           
-          {/* Hero Left Content */}
-          <div className="lg:w-7/12 text-center lg:text-left">
+          {/* Left Column: Bold Headline & Copy */}
+          <div className="lg:col-span-7 text-center lg:text-left">
             
-            {/* Top Quality Assurance Badges */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-6">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-500/15 border border-yellow-500/40 text-yellow-300 text-xs font-bold tracking-[0.2em] uppercase">
+            {/* Top Tag Badges */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/15 border border-yellow-500/50 text-yellow-300 text-xs sm:text-sm font-bold tracking-[0.2em] uppercase shadow-sm">
                 <SparklesIcon />
-                <span>Culinary & Athletic Excellence</span>
+                <span>Culinary Excellence & Sports Nutrition</span>
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/90 border border-yellow-500/60 text-yellow-400 text-xs font-bold uppercase tracking-wider shadow-sm">
+              <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-900 border border-yellow-500/70 text-yellow-300 text-xs sm:text-sm font-black uppercase tracking-wider shadow-md">
                 <HalalBadgeIcon />
                 <span>100% Halal Certified</span>
               </span>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black text-white leading-[1.08] mb-6">
+            {/* Massive, Readable Headline */}
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-serif font-black text-white leading-[1.04] mb-6 tracking-tight">
               Chef Anthony <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 drop-shadow-sm">
                 Larsuel
               </span>
             </h1>
 
-            {/* Subheading / Value Proposition */}
-            <p className="text-gray-300 text-base sm:text-lg lg:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
-              Michelin-level flavor meets elite sports nutrition. Custom macro-calibrated meal prep and bespoke private dining, prepared exclusively with <strong className="text-yellow-400 font-semibold">100% Halal certified meats</strong> and clean, nutrient-dense ingredients.
+            {/* Large, High-Contrast Subtitle */}
+            <p className="text-gray-200 text-lg sm:text-2xl lg:text-2xl mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+              Michelin-level gourmet flavor engineered for athletic performance. Formulated exclusively with <strong className="text-yellow-400 font-bold">100% Halal certified meats</strong>, zero inflammatory seed oils, and high-protein macro precision.
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+            {/* Call-to-Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
               <a 
                 href="#menu" 
-                className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-emerald-950 font-bold px-8 py-4 rounded-sm transition-all text-sm uppercase tracking-widest text-center shadow-xl shadow-yellow-500/20 transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-emerald-950 font-black px-10 py-5 rounded text-base sm:text-lg uppercase tracking-widest text-center shadow-2xl shadow-yellow-500/30 transform hover:-translate-y-1 transition-all"
               >
-                Explore Halal Menu
+                View Halal Menu & Macros
               </a>
               <a 
                 href="#contact" 
-                className="w-full sm:w-auto bg-transparent border-2 border-yellow-500/80 text-yellow-400 hover:bg-yellow-500 hover:text-emerald-950 px-8 py-4 rounded-sm transition-all text-sm uppercase tracking-widest font-bold text-center"
+                className="w-full sm:w-auto bg-emerald-950/80 border-2 border-yellow-500 text-yellow-300 hover:bg-yellow-500 hover:text-emerald-950 px-10 py-5 rounded text-base sm:text-lg uppercase tracking-widest font-black text-center backdrop-blur-md transition-all shadow-lg hover:-translate-y-1"
               >
-                Book a Consultation
+                Book Consultation
               </a>
             </div>
 
-            {/* Quick Accreditation Ribbon */}
-            <div className="mt-12 pt-8 border-t border-emerald-900/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
-                <p className="text-2xl font-serif font-bold text-yellow-400">100%</p>
-                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold flex items-center justify-center lg:justify-start gap-1">
-                  <HalalBadgeIcon /> Halal Certified
-                </p>
+            {/* Trust Highlights Bar (Large Typography) */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left max-w-2xl mx-auto lg:mx-0 border-t border-emerald-800/80 pt-8">
+              <div className="p-3 bg-emerald-950/70 border border-yellow-500/30 rounded-lg">
+                <p className="text-3xl sm:text-4xl font-serif font-black text-yellow-400">100%</p>
+                <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-200 font-bold mt-1">Halal Certified</p>
               </div>
-              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
-                <p className="text-2xl font-serif font-bold text-yellow-400">Zero</p>
-                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold">Seed Oils</p>
+              <div className="p-3 bg-emerald-950/70 border border-yellow-500/30 rounded-lg">
+                <p className="text-3xl sm:text-4xl font-serif font-black text-yellow-400">Zero</p>
+                <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-200 font-bold mt-1">Seed Oils</p>
               </div>
-              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
-                <p className="text-2xl font-serif font-bold text-yellow-400">5★</p>
-                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold">Private Dining</p>
+              <div className="p-3 bg-emerald-950/70 border border-yellow-500/30 rounded-lg">
+                <p className="text-3xl sm:text-4xl font-serif font-black text-yellow-400">5★</p>
+                <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-200 font-bold mt-1">Private Dining</p>
               </div>
-              <div className="p-3 bg-emerald-950/60 border border-emerald-800/60 rounded-lg">
-                <p className="text-2xl font-serif font-bold text-yellow-400">Athlete</p>
-                <p className="text-xs uppercase tracking-wider text-gray-300 mt-1 font-semibold">Macro Precision</p>
+              <div className="p-3 bg-emerald-950/70 border border-yellow-500/30 rounded-lg">
+                <p className="text-3xl sm:text-4xl font-serif font-black text-yellow-400">Athlete</p>
+                <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-200 font-bold mt-1">Macro Precision</p>
               </div>
             </div>
 
           </div>
           
-          {/* Hero Right Portrait Card */}
-          <div className="lg:w-5/12 w-full flex justify-center">
-            <ChefPortrait src="/chef-anthony.jpg" altSrc="/chef-anthony-original.jpg" />
+          {/* Right Column: Interactive Hero Stage (Food & Chef Showcased Instantly) */}
+          <div className="lg:col-span-5 w-full flex flex-col items-center">
+            
+            {/* Interactive Showcase Navigator Tabs */}
+            <div className="w-full flex items-center justify-start gap-1.5 overflow-x-auto pb-2 mb-3 scrollbar-none">
+              {heroFeaturedDishes.map((item, idx) => (
+                <button
+                  key={item.id}
+                  onClick={() => { setActiveTab(idx); setCasualView(false); }}
+                  className={`px-3 py-2 rounded-md text-xs sm:text-sm font-bold tracking-wider uppercase whitespace-nowrap transition-all cursor-pointer ${
+                    activeTab === idx
+                      ? 'bg-yellow-500 text-emerald-950 shadow-lg font-black scale-105'
+                      : 'bg-emerald-900/70 text-gray-300 hover:bg-emerald-800 hover:text-white border border-emerald-800/80'
+                  }`}
+                >
+                  {item.tabLabel}
+                </button>
+              ))}
+            </div>
+
+            {/* Showcase Main Visual Card */}
+            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-yellow-500/80 shadow-2xl bg-emerald-950 group">
+              
+              {/* Halal Guarantee Ribbon on Image */}
+              <div className="absolute top-4 left-4 z-20 backdrop-blur-md bg-emerald-950/90 border border-yellow-500/70 px-4 py-1.5 rounded-full text-xs font-black text-yellow-300 uppercase tracking-widest flex items-center gap-2 shadow-xl">
+                <HalalBadgeIcon />
+                <span>100% Halal Certified</span>
+              </div>
+
+              {/* Look switcher if Chef is active */}
+              {activeItem.isChef && (
+                <button 
+                  type="button"
+                  onClick={() => setCasualView(prev => !prev)}
+                  className="absolute top-4 right-4 z-20 backdrop-blur-md bg-emerald-950/90 hover:bg-yellow-500 hover:text-emerald-950 text-yellow-400 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-yellow-500/60 transition-all shadow-xl cursor-pointer"
+                >
+                  {casualView ? '👔 Casual Look' : '👨‍🍳 Chef Uniform'}
+                </button>
+              )}
+
+              {/* Image Container with High-Res Photography */}
+              <div className="aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/3] relative overflow-hidden bg-emerald-900">
+                <img 
+                  src={activeItem.isChef ? (casualView ? activeItem.altImg : activeItem.img) : activeItem.img} 
+                  alt={activeItem.name} 
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/30 to-transparent opacity-90 pointer-events-none"></div>
+              </div>
+
+              {/* Card Meta & Food Description (Permanent, Unobstructed, Large Typography) */}
+              <div className="p-5 sm:p-6 bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-t border-yellow-500/50">
+                
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                  <span className="text-xs sm:text-sm uppercase font-black tracking-widest text-yellow-400">
+                    {activeItem.tagline}
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-xs font-mono font-bold bg-yellow-500/15 border border-yellow-500/40 text-yellow-300 px-2.5 py-1 rounded">
+                    {activeItem.macro}
+                  </span>
+                </div>
+
+                <h3 className="font-serif font-black text-white text-2xl sm:text-3xl tracking-wide mb-2 leading-tight">
+                  {activeItem.name}
+                </h3>
+
+                <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-light mb-4">
+                  {activeItem.desc}
+                </p>
+
+                <div className="flex items-center justify-between pt-3 border-t border-emerald-800">
+                  <a 
+                    href="#menu" 
+                    className="text-yellow-400 hover:text-yellow-300 text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-1.5 transition-colors"
+                  >
+                    <span>Full Menu & Ingredients</span>
+                    <span>&rarr;</span>
+                  </a>
+
+                  <a 
+                    href="#contact" 
+                    className="bg-yellow-500 hover:bg-yellow-400 text-emerald-950 text-xs sm:text-sm font-black uppercase tracking-wider px-4 py-2 rounded shadow-md"
+                  >
+                    Book This Dish
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
+
+        {/* --- Instant Food Showcase Bar (Visible Above the Fold on Desktop) --- */}
+        <div className="mt-14 pt-8 border-t border-emerald-900/90">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-xs sm:text-sm font-black uppercase tracking-widest text-yellow-400 flex items-center gap-2">
+              <UtensilsIcon />
+              <span>Signature Culinary Creations • 100% Halal Certified</span>
+            </span>
+            <a href="#menu" className="text-gray-300 hover:text-yellow-400 text-xs sm:text-sm font-bold uppercase tracking-wider">
+              Explore All 6 Dishes &rarr;
+            </a>
+          </div>
+
+          {/* Quick-Preview Dish Strip */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {heroFeaturedDishes.filter(d => !d.isChef).map((dish) => (
+              <a 
+                key={dish.id} 
+                href="#menu"
+                className="group relative rounded-xl overflow-hidden border border-yellow-500/40 bg-emerald-950 hover:border-yellow-400 transition-all duration-300 shadow-lg block"
+              >
+                <div className="h-32 sm:h-36 overflow-hidden relative">
+                  <img 
+                    src={dish.img} 
+                    alt={dish.name} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/40 to-transparent"></div>
+                  
+                  <div className="absolute top-2 left-2 bg-emerald-950/90 px-2 py-0.5 rounded text-[10px] font-bold text-yellow-300 uppercase">
+                    100% Halal
+                  </div>
+                </div>
+
+                <div className="p-3">
+                  <h4 className="font-serif font-bold text-white text-sm sm:text-base group-hover:text-yellow-400 transition-colors truncate">
+                    {dish.name}
+                  </h4>
+                  <p className="text-[11px] font-mono text-yellow-300 font-semibold mt-0.5 truncate">
+                    {dish.macro.split('•')[0]}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
@@ -339,40 +450,40 @@ const HalalStandards = () => {
   return (
     <section id="halal" className="py-20 bg-[#041a12] border-y border-yellow-500/20 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-emerald-950 via-emerald-900/60 to-emerald-950 border border-yellow-500/40 rounded-xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div className="bg-gradient-to-r from-emerald-950 via-emerald-900/60 to-emerald-950 border border-yellow-500/50 rounded-2xl p-8 sm:p-14 shadow-2xl relative overflow-hidden">
           
-          <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-80 h-80 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-10 pb-8 border-b border-emerald-800">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-12 pb-8 border-b border-emerald-800">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/20 border border-yellow-500/50 text-yellow-300 text-xs font-bold tracking-widest uppercase mb-3">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-500/20 border border-yellow-500/50 text-yellow-300 text-xs sm:text-sm font-bold tracking-widest uppercase mb-3">
                 <HalalBadgeIcon />
                 <span>Culinary Integrity Guarantee</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-white">
+              <h2 className="text-3xl sm:text-5xl font-serif font-black text-white leading-tight">
                 Certified Halal & Wholesome Ingredient Standard
               </h2>
             </div>
             
-            <div className="flex items-center gap-4 bg-emerald-950/90 px-6 py-3.5 rounded-xl border border-yellow-500/60 shadow-lg">
-              <div className="w-12 h-12 rounded-full bg-yellow-500 text-emerald-950 flex items-center justify-center font-bold text-2xl font-serif">
+            <div className="flex items-center gap-4 bg-emerald-950/90 px-6 py-4 rounded-xl border border-yellow-500/60 shadow-xl">
+              <div className="w-14 h-14 rounded-full bg-yellow-500 text-emerald-950 flex items-center justify-center font-bold text-3xl font-serif">
                 حلال
               </div>
               <div>
-                <p className="text-yellow-400 font-bold uppercase tracking-wider text-xs">Official Certification</p>
-                <p className="text-white font-serif font-semibold text-base">100% Halal Verified</p>
+                <p className="text-yellow-400 font-black uppercase tracking-wider text-xs sm:text-sm">Official Certification</p>
+                <p className="text-white font-serif font-bold text-lg sm:text-xl">100% Halal Verified</p>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pillars.map((pillar, idx) => (
-              <div key={idx} className="bg-emerald-950/70 p-6 rounded-lg border border-emerald-800/80 hover:border-yellow-500/50 transition-colors">
-                <div className="w-8 h-8 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-bold text-sm mb-4">
+              <div key={idx} className="bg-emerald-950/80 p-7 rounded-xl border border-emerald-800 hover:border-yellow-500/50 transition-all shadow-md">
+                <div className="w-10 h-10 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-bold text-base mb-5">
                   0{idx + 1}
                 </div>
-                <h3 className="text-lg font-bold text-yellow-400 font-serif mb-2">{pillar.title}</h3>
-                <p className="text-gray-300 text-sm leading-relaxed font-light">{pillar.desc}</p>
+                <h3 className="text-xl font-bold text-yellow-400 font-serif mb-3">{pillar.title}</h3>
+                <p className="text-gray-200 text-base leading-relaxed font-light">{pillar.desc}</p>
               </div>
             ))}
           </div>
@@ -388,54 +499,54 @@ const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-[#052217] to-emerald-950 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
           
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-xl overflow-hidden border border-yellow-500/50 shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden border-2 border-yellow-500/60 shadow-2xl">
               <img 
                 src="/chef-anthony.jpg" 
                 alt="Chef Anthony Larsuel" 
-                className="w-full h-auto object-cover max-h-[500px]"
+                className="w-full h-auto object-cover max-h-[560px]"
                 onError={(e) => { e.target.src = '/chef-anthony-original.jpg'; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="font-serif text-xl font-bold text-yellow-400">"Food is fuel, but it must be art."</p>
-                <p className="text-sm text-gray-300 uppercase tracking-widest mt-1">— Chef Anthony Larsuel</p>
+                <p className="font-serif text-2xl font-bold text-yellow-400">"Food is fuel, but it must be art."</p>
+                <p className="text-sm text-gray-200 uppercase tracking-widest mt-1 font-semibold">— Chef Anthony Larsuel</p>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-7">
-            <span className="text-yellow-500 font-bold tracking-[0.2em] text-sm uppercase mb-3 block">
+            <span className="text-yellow-400 font-bold tracking-[0.25em] text-sm uppercase mb-3 block">
               The Philosophy & Craft
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-black text-white mb-6 leading-tight">
               Halal Culinary Mastery Meets Athletic Performance
             </h2>
-            <div className="w-20 h-1 bg-yellow-500 mb-8"></div>
+            <div className="w-24 h-1.5 bg-yellow-500 mb-8 rounded-full"></div>
             
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 font-light">
-              Chef Anthony Larsuel redefines high-performance nutrition. By uniting <span className="text-yellow-400 font-semibold">100% Halal certified butchery</span> with fine dining craft, he proves that athletic fuel never has to sacrifice richness, depth of flavor, or cultural values.
+            <p className="text-gray-200 text-lg sm:text-xl leading-relaxed mb-6 font-light">
+              Chef Anthony Larsuel redefines high-performance nutrition. By uniting <span className="text-yellow-400 font-bold">100% Halal certified butchery</span> with fine dining craft, he proves that athletic fuel never has to sacrifice richness, depth of flavor, or cultural values.
             </p>
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-8 font-light">
+            <p className="text-gray-200 text-lg sm:text-xl leading-relaxed mb-8 font-light">
               Whether curating an intimate in-home multi-course dining experience or supplying macro-calibrated high-protein meals for athletes and executives, each dish is made with anti-inflammatory superfoods, clean fats, and zero compromise.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-emerald-900/40 border border-emerald-800 p-5 rounded-lg">
-                <div className="flex items-center gap-2 mb-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="bg-emerald-900/50 border border-emerald-800 p-6 rounded-xl">
+                <div className="flex items-center gap-2.5 mb-2">
                   <HalalBadgeIcon />
-                  <h4 className="text-yellow-400 font-bold uppercase tracking-wider text-sm">Certified Halal Proteins</h4>
+                  <h4 className="text-yellow-400 font-bold uppercase tracking-wider text-base">Certified Halal Proteins</h4>
                 </div>
-                <p className="text-gray-300 text-xs leading-relaxed">Grass-fed lamb, prime beef, and cage-free chicken rigorously certified and ethically raised.</p>
+                <p className="text-gray-200 text-sm leading-relaxed">Grass-fed lamb, prime beef, and cage-free chicken rigorously certified and ethically raised.</p>
               </div>
-              <div className="bg-emerald-900/40 border border-emerald-800 p-5 rounded-lg">
-                <div className="flex items-center gap-2 mb-2">
+              <div className="bg-emerald-900/50 border border-emerald-800 p-6 rounded-xl">
+                <div className="flex items-center gap-2.5 mb-2">
                   <HeartPulseIcon />
-                  <h4 className="text-yellow-400 font-bold uppercase tracking-wider text-sm">Athlete Macro Accuracy</h4>
+                  <h4 className="text-yellow-400 font-bold uppercase tracking-wider text-base">Athlete Macro Accuracy</h4>
                 </div>
-                <p className="text-gray-300 text-xs leading-relaxed">Precision high-protein formulas with transparent nutritional breakdowns for peak physical output.</p>
+                <p className="text-gray-200 text-sm leading-relaxed">Precision high-protein formulas with transparent nutritional breakdowns for peak physical output.</p>
               </div>
             </div>
           </div>
@@ -446,7 +557,7 @@ const About = () => {
   );
 };
 
-// --- Menu & Good Ingredients Section ---
+// --- Menu & Good Ingredients Section (Large, Readable Cards) ---
 const MenuGallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [expandedDish, setExpandedDish] = useState(null);
@@ -458,7 +569,7 @@ const MenuGallery = () => {
       category: 'signature',
       halalStatus: "100% Halal Certified (New Zealand Grass-Fed)",
       macros: "52g Protein • 6g Carbs • 34g Healthy Fats • 540 kcal",
-      img: "https://images.unsplash.com/photo-1603894584373-5ac82bea3d76?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1603894584373-5ac82bea3d76?auto=format&fit=crop&w=1200&q=85",
       description: "Thick-cut, pan-seared pasture-raised lamb chops infused with fresh rosemary and roasted garlic confit, finished with a tart pomegranate-balsamic reduction.",
       goodIngredients: [
         {
@@ -485,7 +596,7 @@ const MenuGallery = () => {
       category: 'signature',
       halalStatus: "100% Halal Certified Prime Angus",
       macros: "58g Protein • 2g Carbs • 28g Fats • 490 kcal",
-      img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=85",
       description: "Tender prime steak seared in grass-fed garlic butter and cracked peppercorn, paired with fire-charred heirloom asparagus and grey sea salt.",
       goodIngredients: [
         {
@@ -512,7 +623,7 @@ const MenuGallery = () => {
       category: 'prep',
       halalStatus: "100% Halal Certified Wild-Caught Seafood",
       macros: "44g Protein • 52g Carbs • 14g Fats • 510 kcal",
-      img: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1200&q=85",
       description: "Jumbo Gulf wild shrimp tossed in slow-cooked black garlic confit, scallions, and silky wheat noodles with savory umami reduction.",
       goodIngredients: [
         {
@@ -539,7 +650,7 @@ const MenuGallery = () => {
       category: 'prep',
       halalStatus: "100% Halal Certified Organic Chicken Breast",
       macros: "48g Protein • 38g Carbs • 16g Fats • 490 kcal",
-      img: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85",
       description: "Air-crisped organic chicken breast in light artisanal panko, drizzled with homemade ginger-honey tonkatsu sauce over shredded purple cabbage.",
       goodIngredients: [
         {
@@ -566,7 +677,7 @@ const MenuGallery = () => {
       category: 'prep',
       halalStatus: "100% Halal Certified Chicken & Wild Shrimp",
       macros: "46g Protein • 54g Carbs • 18g Fats • 560 kcal",
-      img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=85",
       description: "Tender halal chicken strips and wild shrimp sautéed with sweet tri-color peppers in a fragrant Caribbean coconut cream jerk sauce.",
       goodIngredients: [
         {
@@ -593,7 +704,7 @@ const MenuGallery = () => {
       category: 'signature',
       halalStatus: "100% Halal Certified Free-Range Chicken",
       macros: "42g Protein • 18g Carbs • 22g Fats • 440 kcal",
-      img: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=1200&q=85",
       description: "Crispy oven-roasted halal chicken wings glazed in raw clover honey, coconut aminos, fresh grated ginger root, and toasted sesame.",
       goodIngredients: [
         {
@@ -624,38 +735,38 @@ const MenuGallery = () => {
     <section id="menu" className="py-24 bg-white text-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-gray-200 pb-8">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300 text-xs font-bold uppercase tracking-wider mb-3">
+        {/* Section Header with Large Typography */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 border-b border-gray-200 pb-8">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-950 border border-emerald-300 text-xs sm:text-sm font-black uppercase tracking-wider mb-3">
               <HalalBadgeIcon />
               <span>100% Halal Certified Menu</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-emerald-950">
+            <h2 className="text-4xl sm:text-6xl font-serif font-black text-emerald-950 leading-tight">
               Signature Dishes & Wholesome Ingredients
             </h2>
-            <p className="text-gray-600 mt-3 text-base sm:text-lg">
+            <p className="text-gray-700 mt-4 text-lg sm:text-xl font-light leading-relaxed">
               Every dish is crafted with verified 100% Halal proteins, zero seed oils, and nutrient-dense whole foods calibrated for high performance.
             </p>
           </div>
 
           {/* Filter Pills */}
-          <div className="mt-6 md:mt-0 flex flex-wrap gap-2">
+          <div className="mt-6 md:mt-0 flex flex-wrap gap-2.5">
             <button 
               onClick={() => setActiveCategory('all')}
-              className={`px-4 py-2 rounded-sm text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
+              className={`px-5 py-2.5 rounded text-xs sm:text-sm font-black uppercase tracking-wider transition-all cursor-pointer ${
                 activeCategory === 'all' 
-                  ? 'bg-emerald-900 text-yellow-400 shadow-md' 
+                  ? 'bg-emerald-950 text-yellow-400 shadow-md scale-105' 
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              All Items
+              All Dishes
             </button>
             <button 
               onClick={() => setActiveCategory('signature')}
-              className={`px-4 py-2 rounded-sm text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
+              className={`px-5 py-2.5 rounded text-xs sm:text-sm font-black uppercase tracking-wider transition-all cursor-pointer ${
                 activeCategory === 'signature' 
-                  ? 'bg-emerald-900 text-yellow-400 shadow-md' 
+                  ? 'bg-emerald-950 text-yellow-400 shadow-md scale-105' 
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -663,13 +774,13 @@ const MenuGallery = () => {
             </button>
             <button 
               onClick={() => setActiveCategory('prep')}
-              className={`px-4 py-2 rounded-sm text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
+              className={`px-5 py-2.5 rounded text-xs sm:text-sm font-black uppercase tracking-wider transition-all cursor-pointer ${
                 activeCategory === 'prep' 
-                  ? 'bg-emerald-900 text-yellow-400 shadow-md' 
+                  ? 'bg-emerald-950 text-yellow-400 shadow-md scale-105' 
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              High-Protein Meal Prep
+              Sports Meal Prep
             </button>
           </div>
         </div>
@@ -681,44 +792,44 @@ const MenuGallery = () => {
             return (
               <div 
                 key={item.id} 
-                className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group"
+                className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group"
               >
                 {/* Image Container with Badges */}
-                <div className="relative h-64 overflow-hidden bg-gray-100">
+                <div className="relative h-72 overflow-hidden bg-gray-100">
                   <img 
                     src={item.img} 
                     alt={item.name} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/85 via-transparent to-transparent"></div>
                   
                   {/* Top Halal Badge Ribbon */}
-                  <div className="absolute top-3 left-3 bg-emerald-950/90 backdrop-blur-md border border-yellow-500/60 px-3 py-1 rounded text-[11px] font-bold text-yellow-400 tracking-wider uppercase flex items-center gap-1.5 shadow-md">
+                  <div className="absolute top-3.5 left-3.5 bg-emerald-950/95 backdrop-blur-md border border-yellow-500/70 px-3.5 py-1.5 rounded-full text-xs font-black text-yellow-300 tracking-wider uppercase flex items-center gap-1.5 shadow-md">
                     <HalalBadgeIcon />
                     <span>Halal Certified</span>
                   </div>
 
                   {/* Macros overlay */}
-                  <div className="absolute bottom-3 left-3 right-3 text-white">
-                    <span className="inline-block bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-mono font-medium text-yellow-300">
+                  <div className="absolute bottom-3.5 left-3.5 right-3.5 text-white">
+                    <span className="inline-block bg-black/75 backdrop-blur-sm px-3 py-1.5 rounded text-xs sm:text-sm font-mono font-bold text-yellow-300">
                       {item.macros}
                     </span>
                   </div>
                 </div>
 
                 {/* Content Body */}
-                <div className="p-6 flex-1 flex flex-col justify-between">
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold font-serif text-emerald-950 mb-2">
+                    <h3 className="text-2xl sm:text-3xl font-bold font-serif text-emerald-950 mb-3 leading-tight">
                       {item.name}
                     </h3>
                     
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    <p className="text-gray-700 text-base leading-relaxed mb-4 font-light">
                       {item.description}
                     </p>
 
                     {/* Halal Certification Note */}
-                    <div className="mb-4 text-xs font-semibold text-emerald-800 bg-emerald-50 px-3 py-2 rounded border-l-4 border-emerald-700 flex items-center gap-2">
+                    <div className="mb-5 text-sm font-bold text-emerald-900 bg-emerald-50 px-4 py-2.5 rounded-lg border-l-4 border-emerald-700 flex items-center gap-2">
                       <HalalBadgeIcon />
                       <span>{item.halalStatus}</span>
                     </div>
@@ -726,25 +837,25 @@ const MenuGallery = () => {
                     {/* Good Ingredients Section */}
                     <div className="border-t border-gray-100 pt-4">
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-bold uppercase tracking-wider text-emerald-900 flex items-center gap-1.5">
+                        <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-emerald-950 flex items-center gap-1.5">
                           <LeafIcon />
                           <span>What's Good in It</span>
                         </span>
                         <button
                           type="button"
                           onClick={() => setExpandedDish(isExpanded ? null : item.id)}
-                          className="text-xs font-bold text-yellow-600 hover:text-yellow-700 underline cursor-pointer"
+                          className="text-xs sm:text-sm font-bold text-yellow-600 hover:text-yellow-700 underline cursor-pointer"
                         >
                           {isExpanded ? 'Hide Details' : 'View Benefits'}
                         </button>
                       </div>
 
                       {/* Ingredient Highlights */}
-                      <ul className="space-y-2.5">
+                      <ul className="space-y-3">
                         {item.goodIngredients.slice(0, isExpanded ? 4 : 2).map((ing, i) => (
-                          <li key={i} className="text-xs text-gray-700 bg-gray-50 p-2.5 rounded border border-gray-100">
-                            <span className="font-bold text-emerald-950 block mb-0.5">• {ing.name}</span>
-                            <span className="text-gray-600 font-light leading-relaxed">{ing.benefit}</span>
+                          <li key={i} className="text-sm text-gray-800 bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <span className="font-bold text-emerald-950 block mb-1">• {ing.name}</span>
+                            <span className="text-gray-600 font-light leading-relaxed block">{ing.benefit}</span>
                           </li>
                         ))}
                       </ul>
@@ -752,15 +863,15 @@ const MenuGallery = () => {
                   </div>
 
                   {/* Action Link to Consultation */}
-                  <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
-                      Custom Meal Prep & Dining
+                  <div className="mt-7 pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <span className="text-xs uppercase font-bold tracking-widest text-gray-500">
+                      Private Dining & Prep
                     </span>
                     <a 
                       href="#contact" 
-                      className="text-xs font-bold text-emerald-900 hover:text-yellow-600 uppercase tracking-wider flex items-center gap-1 transition-colors"
+                      className="text-sm font-black text-emerald-950 hover:text-yellow-600 uppercase tracking-wider flex items-center gap-1.5 transition-colors"
                     >
-                      Inquire Menu &rarr;
+                      Inquire Dish &rarr;
                     </a>
                   </div>
 
@@ -799,22 +910,22 @@ const Services = () => {
     <section id="services" className="py-24 bg-emerald-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-emerald-800 font-bold tracking-[0.2em] text-sm uppercase mb-2 block">What I Do</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-emerald-950 mb-6">Culinary & Nutritional Excellence</h2>
-          <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
-          <p className="text-gray-600 text-lg">
+          <span className="text-emerald-900 font-black tracking-[0.25em] text-sm uppercase mb-3 block">What I Do</span>
+          <h2 className="text-4xl sm:text-6xl font-serif font-black text-emerald-950 mb-6 leading-tight">Culinary & Nutritional Excellence</h2>
+          <div className="w-24 h-1.5 bg-yellow-500 mx-auto mb-6 rounded-full"></div>
+          <p className="text-gray-700 text-lg sm:text-xl font-light leading-relaxed">
             Whether you need tailored sports nutrition to hit your fitness goals, or a luxurious private dinner, every menu is crafted with precision, passion, and 100% certified Halal integrity.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicesList.map((service, index) => (
-            <div key={index} className="bg-white p-8 border-t-4 border-emerald-800 rounded-lg shadow-md hover:shadow-xl transition-shadow group">
+            <div key={index} className="bg-white p-9 border-t-4 border-emerald-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow group">
               <div className="text-yellow-600 mb-6 group-hover:scale-110 transition-transform origin-left">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold text-emerald-950 uppercase tracking-wide mb-4 font-serif">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{service.desc}</p>
+              <h3 className="text-2xl font-bold text-emerald-950 uppercase tracking-wide mb-4 font-serif">{service.title}</h3>
+              <p className="text-gray-700 text-base leading-relaxed font-light">{service.desc}</p>
             </div>
           ))}
         </div>
@@ -837,39 +948,39 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/2">
-            <span className="text-yellow-500 font-bold tracking-[0.2em] text-sm uppercase mb-2 block">Get in Touch</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Book Your Consultation</h2>
-            <div className="w-24 h-1 bg-yellow-500 mb-8"></div>
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed font-light">
+            <span className="text-yellow-400 font-bold tracking-[0.25em] text-sm uppercase mb-3 block">Get in Touch</span>
+            <h2 className="text-4xl sm:text-6xl font-serif font-black mb-6 leading-tight">Book Your Consultation</h2>
+            <div className="w-24 h-1.5 bg-yellow-500 mb-8 rounded-full"></div>
+            <p className="text-gray-200 text-lg sm:text-xl mb-8 leading-relaxed font-light">
               Ready to elevate your diet with 100% Halal meal prep, book a private dinner, or establish a custom sports nutrition plan? Fill out the form, and Chef Anthony will reach out to discuss your specific goals.
             </p>
             
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-emerald-900 border border-emerald-800 flex items-center justify-center text-yellow-400 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div className="w-14 h-14 bg-emerald-900 border border-emerald-800 flex items-center justify-center text-yellow-400 rounded-full shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <div>
-                  <h4 className="font-bold uppercase tracking-wider text-sm">Phone</h4>
-                  <p className="text-gray-400">Available upon consultation request</p>
+                  <h4 className="font-bold uppercase tracking-wider text-sm text-yellow-400">Direct Phone</h4>
+                  <p className="text-gray-300 text-base">Available upon consultation request</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-emerald-900 border border-emerald-800 flex items-center justify-center text-yellow-400 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <div className="w-14 h-14 bg-emerald-900 border border-emerald-800 flex items-center justify-center text-yellow-400 rounded-full shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
                 <div>
-                  <h4 className="font-bold uppercase tracking-wider text-sm">Email</h4>
-                  <p className="text-gray-400">booking@cheflarsuel.com</p>
+                  <h4 className="font-bold uppercase tracking-wider text-sm text-yellow-400">Email Inquiries</h4>
+                  <p className="text-gray-300 text-base">booking@cheflarsuel.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-emerald-900 border border-emerald-800 flex items-center justify-center text-yellow-400 rounded-full">
+                <div className="w-14 h-14 bg-emerald-900 border border-emerald-800 flex items-center justify-center text-yellow-400 rounded-full shadow-lg">
                   <HalalBadgeIcon />
                 </div>
                 <div>
-                  <h4 className="font-bold uppercase tracking-wider text-sm">Dietary Standards</h4>
-                  <p className="text-gray-400">100% Certified Halal • Zero Seed Oils • Macro Calibrated</p>
+                  <h4 className="font-bold uppercase tracking-wider text-sm text-yellow-400">Dietary Standards</h4>
+                  <p className="text-gray-300 text-base">100% Certified Halal • Zero Seed Oils • Macro Calibrated</p>
                 </div>
               </div>
             </div>
@@ -877,32 +988,32 @@ const Contact = () => {
 
           <div className="lg:w-1/2">
             {submitted ? (
-              <div className="bg-emerald-900/60 p-10 border border-yellow-500/50 rounded-lg text-center">
-                <div className="w-16 h-16 bg-yellow-500 text-emerald-950 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">
+              <div className="bg-emerald-900/60 p-12 border border-yellow-500/50 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-yellow-500 text-emerald-950 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-3xl">
                   ✓
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-yellow-400 mb-2">Inquiry Received</h3>
-                <p className="text-gray-300">Thank you! Chef Anthony will review your consultation request and reach out shortly.</p>
+                <h3 className="text-3xl font-serif font-black text-yellow-400 mb-2">Inquiry Received</h3>
+                <p className="text-gray-200 text-lg">Thank you! Chef Anthony will review your consultation request and reach out shortly.</p>
               </div>
             ) : (
-              <form className="bg-emerald-900/40 p-8 border border-emerald-800/80 rounded-xl shadow-xl backdrop-blur-sm" onSubmit={handleSubmit}>
+              <form className="bg-emerald-900/40 p-8 sm:p-10 border border-emerald-800/90 rounded-2xl shadow-2xl backdrop-blur-md" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">First Name</label>
-                    <input required type="text" className="w-full bg-emerald-950 border border-emerald-700/80 text-white px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors rounded-sm" placeholder="John" />
+                    <label className="block text-xs uppercase tracking-wider text-gray-200 mb-2 font-bold">First Name</label>
+                    <input required type="text" className="w-full bg-emerald-950/90 border border-emerald-700 text-white px-4 py-3.5 focus:outline-none focus:border-yellow-500 transition-colors rounded text-base" placeholder="John" />
                   </div>
                   <div>
-                    <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">Last Name</label>
-                    <input required type="text" className="w-full bg-emerald-950 border border-emerald-700/80 text-white px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors rounded-sm" placeholder="Doe" />
+                    <label className="block text-xs uppercase tracking-wider text-gray-200 mb-2 font-bold">Last Name</label>
+                    <input required type="text" className="w-full bg-emerald-950/90 border border-emerald-700 text-white px-4 py-3.5 focus:outline-none focus:border-yellow-500 transition-colors rounded text-base" placeholder="Doe" />
                   </div>
                 </div>
                 <div className="mb-6">
-                  <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">Email Address</label>
-                  <input required type="email" className="w-full bg-emerald-950 border border-emerald-700/80 text-white px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors rounded-sm" placeholder="john@example.com" />
+                  <label className="block text-xs uppercase tracking-wider text-gray-200 mb-2 font-bold">Email Address</label>
+                  <input required type="email" className="w-full bg-emerald-950/90 border border-emerald-700 text-white px-4 py-3.5 focus:outline-none focus:border-yellow-500 transition-colors rounded text-base" placeholder="john@example.com" />
                 </div>
                 <div className="mb-6">
-                  <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">Service of Interest</label>
-                  <select className="w-full bg-emerald-950 border border-emerald-700/80 text-white px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors rounded-sm appearance-none">
+                  <label className="block text-xs uppercase tracking-wider text-gray-200 mb-2 font-bold">Service of Interest</label>
+                  <select className="w-full bg-emerald-950/90 border border-emerald-700 text-white px-4 py-3.5 focus:outline-none focus:border-yellow-500 transition-colors rounded text-base appearance-none">
                     <option>Weekly Halal Sports Meal Prep</option>
                     <option>Halal Private Dining Experience (In-Home)</option>
                     <option>VIP Event Catering</option>
@@ -910,10 +1021,10 @@ const Contact = () => {
                   </select>
                 </div>
                 <div className="mb-8">
-                  <label className="block text-xs uppercase tracking-wider text-gray-300 mb-2 font-semibold">Message Details & Dietary Goals</label>
-                  <textarea rows="4" className="w-full bg-emerald-950 border border-emerald-700/80 text-white px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors rounded-sm" placeholder="Tell Chef Anthony about your fitness goals, target macros, or preferred dishes from the menu..."></textarea>
+                  <label className="block text-xs uppercase tracking-wider text-gray-200 mb-2 font-bold">Message Details & Dietary Goals</label>
+                  <textarea rows="4" className="w-full bg-emerald-950/90 border border-emerald-700 text-white px-4 py-3.5 focus:outline-none focus:border-yellow-500 transition-colors rounded text-base" placeholder="Tell Chef Anthony about your fitness goals, target macros, or preferred dishes from the menu..."></textarea>
                 </div>
-                <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-emerald-950 font-bold uppercase tracking-widest py-4 transition-all rounded-sm shadow-lg shadow-yellow-500/20 cursor-pointer">
+                <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-emerald-950 font-black uppercase tracking-widest py-4.5 transition-all rounded shadow-xl shadow-yellow-500/25 cursor-pointer text-base">
                   Send Inquiry
                 </button>
               </form>
@@ -927,14 +1038,14 @@ const Contact = () => {
 
 // --- Footer ---
 const Footer = () => (
-  <footer className="bg-[#03150e] py-12 text-center border-t border-emerald-900/50">
+  <footer className="bg-[#03150e] py-14 text-center border-t border-emerald-900/60">
     <div className="max-w-7xl mx-auto px-4">
-      <p className="text-yellow-500 font-bold tracking-widest text-2xl mb-2 font-serif">CHEF ANTHONY LARSUEL</p>
-      <div className="inline-flex items-center gap-2 text-yellow-400 text-xs tracking-widest uppercase mb-4 bg-emerald-950/80 px-4 py-1.5 rounded-full border border-yellow-500/30">
+      <p className="text-yellow-400 font-bold tracking-widest text-3xl mb-3 font-serif">CHEF ANTHONY LARSUEL</p>
+      <div className="inline-flex items-center gap-2 text-yellow-300 text-sm tracking-widest uppercase mb-4 bg-emerald-950/90 px-5 py-2 rounded-full border border-yellow-500/40">
         <HalalBadgeIcon />
         <span>100% Certified Halal • Pure Whole Ingredients • Athlete Performance</span>
       </div>
-      <p className="text-gray-500 text-xs tracking-wider uppercase">
+      <p className="text-gray-400 text-sm tracking-wider uppercase mt-2">
         &copy; {new Date().getFullYear()} Chef Anthony Larsuel. All rights reserved.
       </p>
     </div>
